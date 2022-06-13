@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UserRegion_Suite">
+	<test thread-count="5" name="Test">  <!--Total Run(8) Pass(8) and Fail(0) // ACTIVE : 5 -->
+		<classes>
+			<class name="scenarios.api.UserRegion_UserID" />
+			<class name="extend.api.CreateReport" />
+			<class name="testsuite1.test.User_Region_GET_with_indistinct" />
+			<class name="testsuite1.test.User_Region_GET_with_distinct_UserID" />
+			<class name="testsuite1.test.User_Region_POST_with_indistinct" />
+
+			<class name="scenarios.api.UserRegion_UserIDRegionID" />
+			<class name="extend.api.CreateReport" />
+			<class name="testsuite1.test.User_Region_GET_with_distinct_UserID_RegionID" />
+			<class name="testsuite1.test.User_Region_DELETE_with_distinct_UserID_RegionID" />
+			
+	</classes>  
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
