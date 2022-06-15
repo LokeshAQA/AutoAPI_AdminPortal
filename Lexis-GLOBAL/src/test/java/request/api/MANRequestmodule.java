@@ -1152,9 +1152,9 @@ public class MANRequestmodule extends Environment {
 			try {
 				httprequest.headers("Content-Type", "application/json");
 				httprequest.header("Authorization", "Bearer " + token);
-				httpresponse = httprequest.request(Method.GET, str7 + "/" + uniqueide1);
-				log.debug("⏪ GET_SPF ⏩ Request for " + url + str7 + "/" + uniqueide1);
-				test.log(Status.INFO, "GET(ID) Method  ➜ " + url + str7 + "/" + uniqueide1);
+				httpresponse = httprequest.request(Method.GET, str7 + "/" + FinalEntityName);
+				log.debug("⏪ GET_SPF ⏩ Request for " + url + str7 + "/" + FinalEntityName);
+				test.log(Status.INFO, "GET(ID) Method  ➜ " + url + str7 + "/" + FinalEntityName);
 
 			} catch (Exception e) {
 				log.debug("Failing ! ☹..Exception occur on Spcefic GET Request " + e);
@@ -1545,9 +1545,9 @@ public class MANRequestmodule extends Environment {
 			try {
 				httprequest.headers("Content-Type", "application/json");
 				httprequest.header("Authorization", "Bearer " + token);
-				httpresponse = httprequest.request(Method.DELETE, str7 + "/" + uniqueide1);
-				log.debug("⏪ DELETE ⏩ Request initiated for " + url + str7 + "/" + uniqueide1);
-				test.log(Status.INFO, "DELETE Method  ➜ " + url + str7 + "/" + uniqueide1);
+				httpresponse = httprequest.request(Method.DELETE, str7 + "/" + FinalEntityName);
+				log.debug("⏪ DELETE ⏩ Request initiated for " + url + str7 + "/" + FinalEntityName);
+				test.log(Status.INFO, "DELETE Method  ➜ " + url + str7 + "/" + FinalEntityName);
 				
 
 			} catch (Exception e) {

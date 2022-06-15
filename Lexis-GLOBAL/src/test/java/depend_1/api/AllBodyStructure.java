@@ -585,7 +585,8 @@ public class AllBodyStructure extends Environment {
 
 		String EntityTypeName = pro.getProperty("EntityTypeName");
 		requestParams.put("Name", EntityTypeName+currenttime12);
-		log.debug("EntityType Name Given i.e. " + EntityTypeName+currenttime12);
+		FinalEntityName=EntityTypeName+currenttime12;
+		log.debug("EntityType Name Given i.e. " + FinalEntityName);
 		requestParams.put("RegionId", uniqueidr1);
 		log.debug("Region ID Given i.e. " + uniqueidr1);
 		httprequest.body(requestParams.toJSONString());
@@ -615,7 +616,8 @@ public class AllBodyStructure extends Environment {
 
 		String EntitySubTypeName = pro.getProperty("EntityTypeSubName");
 		requestParams.put("Name", EntitySubTypeName+currenttime12);
-		log.debug("EntityType Name Given i.e. " + EntitySubTypeName+currenttime12);
+		FinalEntitySubTypeName=EntitySubTypeName+currenttime12;
+		log.debug("EntityType Name Given i.e. " + FinalEntitySubTypeName);
 		requestParams.put("EntitytypeID", uniqueide1);
 		log.debug("EntityType ID  Given i.e. " + uniqueide1);
 		requestParams.put("RegionId", uniqueidr1);
@@ -694,14 +696,14 @@ public class AllBodyStructure extends Environment {
 		requestParams.put("EntitySubTypeId", uniqueides1);
 		log.debug("EntitySubTypeId ID Given i.e. " + uniqueides1);
 		
-		requestParams.put("EntityTypeName", "TestAccepta");
-		log.debug("EntitySubTypeId ID Given i.e. " + "TestAccepta");
+		requestParams.put("EntityTypeName", FinalEntityName);
+		log.debug("EntityType Name Given i.e. " + FinalEntityName);
 		
-		requestParams.put("EntitySubTypeName", "TestOptan");
-		log.debug("EntitySubTypeName ID Given i.e. " + "TestOptan");
+		requestParams.put("EntitySubTypeName", FinalEntitySubTypeName);
+		log.debug("EntitySubType Name Given i.e. " + FinalEntitySubTypeName);
 		
-		requestParams.put("Version", "1");
-		log.debug("Version ID Given i.e. " + "1");
+		requestParams.put("Version", "");
+		log.debug("Version ID Given i.e. " + "");
 		
 		httprequest.body(requestParams.toJSONString());
 	}

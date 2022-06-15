@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-15T08:49:02 IST" name="Region_Suite" finished-at="2022-06-15T08:53:01 IST" duration-ms="238721">
+    <groups>
+    </groups>
+    <test started-at="2022-06-15T08:49:02 IST" name="Test" finished-at="2022-06-15T08:53:01 IST" duration-ms="238721">
+      <class name="testsuite1.test.Region_DELETE_Delete">
+        <test-method signature="DELETE_Specific_Region_using_ID(java.lang.String)[pri:0, instance:testsuite1.test.Region_DELETE_Delete@5c5eefef]" started-at="2022-06-15T08:51:20 IST" name="DELETE_Specific_Region_using_ID" data-provider="ProbaseURL" finished-at="2022-06-15T08:52:10 IST" duration-ms="50372" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://lnmjapi.adappt.ai/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DELETE_Specific_Region_using_ID -->
+      </class> <!-- testsuite1.test.Region_DELETE_Delete -->
+      <class name="testsuite1.test.Region_GET_View_ID">
+        <test-method signature="VIEW_Specific_Region_using_ID(java.lang.String)[pri:0, instance:testsuite1.test.Region_GET_View_ID@16293aa2]" started-at="2022-06-15T08:52:10 IST" name="VIEW_Specific_Region_using_ID" data-provider="ProbaseURL" finished-at="2022-06-15T08:53:01 IST" duration-ms="50748" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://lnmjapi.adappt.ai/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VIEW_Specific_Region_using_ID -->
+      </class> <!-- testsuite1.test.Region_GET_View_ID -->
+      <class name="testsuite1.test.Region_PUT_Update">
+        <test-method signature="UPDATE_Specific_Region_using_ID(java.lang.String)[pri:0, instance:testsuite1.test.Region_PUT_Update@222545dc]" started-at="2022-06-15T08:50:12 IST" name="UPDATE_Specific_Region_using_ID" data-provider="ProbaseURL" finished-at="2022-06-15T08:51:20 IST" duration-ms="68049" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://lnmjapi.adappt.ai/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UPDATE_Specific_Region_using_ID -->
+      </class> <!-- testsuite1.test.Region_PUT_Update -->
+      <class name="testsuite1.test.Region_POST_Create">
+        <test-method signature="CREATE_New_Region(java.lang.String)[pri:0, instance:testsuite1.test.Region_POST_Create@6c64cb25]" started-at="2022-06-15T08:49:02 IST" name="CREATE_New_Region" data-provider="ProbaseURL" finished-at="2022-06-15T08:49:39 IST" duration-ms="36784" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://lnmjapi.adappt.ai/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CREATE_New_Region -->
+      </class> <!-- testsuite1.test.Region_POST_Create -->
+      <class name="testsuite1.test.Region_GET_View">
+        <test-method signature="VIEW_All_Region(java.lang.String)[pri:0, instance:testsuite1.test.Region_GET_View@6ae5aa72]" started-at="2022-06-15T08:49:39 IST" name="VIEW_All_Region" data-provider="ProbaseURL" finished-at="2022-06-15T08:50:12 IST" duration-ms="32512" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://lnmjapi.adappt.ai/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VIEW_All_Region -->
+      </class> <!-- testsuite1.test.Region_GET_View -->
+      <class name="extend.api.CreateReport">
+        <test-method signature="extend()[pri:1, instance:extend.api.CreateReport@245b4bdc]" started-at="2022-06-15T08:49:02 IST" name="extend" finished-at="2022-06-15T08:49:02 IST" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extend -->
+      </class> <!-- extend.api.CreateReport -->
+      <class name="scenarios.api.Region_RegionID">
+        <test-method signature="filename()[pri:0, instance:scenarios.api.Region_RegionID@4fb0f2b9]" started-at="2022-06-15T08:49:02 IST" name="filename" finished-at="2022-06-15T08:49:02 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filename -->
+      </class> <!-- scenarios.api.Region_RegionID -->
+    </test> <!-- Test -->
+  </suite> <!-- Region_Suite -->
+</testng-results>
