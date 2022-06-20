@@ -14,9 +14,7 @@
 			<class name="testsuite2.test.EntityType_DELETE_with_distinct_EntityTypeID" />
             
 		</classes>
-	</test> <!-- Test -->
+	</test> <!-- Test -->	
 </suite> <!-- Suite -->
 
-
-
-
+ 
