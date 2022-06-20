@@ -35,6 +35,7 @@ public class MANRequestmodule extends Environment {
 					httpresponse = httprequest.request(Method.POST, str3);
 					log.debug("⏪ POST ⏩ Requested for " + url + str3);
 					test.log(Status.INFO, "POST Method  ➜ " + url + str3);
+					Subcategory="BaseLine";
 				} catch (Exception e) {
 					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to Initiate POST Method for " + executefile + " Creation");
@@ -296,6 +297,32 @@ public class MANRequestmodule extends Environment {
 				test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
 				Assert.fail();
 			}
+		} 
+		if (Subcategory.equals("RollbackVersionChanges")) { 
+			try {
+				httprequest.headers("Content-Type", "application/json");
+				httprequest.header("Authorization", "Bearer " + token);
+				httpresponse = httprequest.request(Method.POST, str8 +"/RollbackVersionChanges/"+uniqueides1);
+				log.debug("⏪ POST ⏩ Requested for " + url + str8+"/RollbackVersionChanges/"+uniqueides1);
+				test.log(Status.INFO, "POST Method  ➜ " + url + str8+"/RollbackVersionChanges/"+uniqueides1);
+			} catch (Exception e) {
+				log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
+				test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+				Assert.fail();
+			}
+		}
+		if (Subcategory.equals("GetByEntityTypeID")) { 
+			try {
+				httprequest.headers("Content-Type", "application/json");
+				httprequest.header("Authorization", "Bearer " + token);
+				httpresponse = httprequest.request(Method.POST, str8 +"/GetByEntityTypeID");
+				log.debug("⏪ POST ⏩ Requested for " + url + str8+"/GetByEntityTypeID");
+				test.log(Status.INFO, "POST Method  ➜ " + url + str8+"/GetByEntityTypeID");
+			} catch (Exception e) {
+				log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
+				test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+				Assert.fail();
+			}
 		}
 	}
 		if (executefile.equals("ENTITIES")) {
@@ -359,6 +386,7 @@ public class MANRequestmodule extends Environment {
 						httpresponse = httprequest.request(Method.POST, str9);
 						log.debug("⏪ POST ⏩ Requested for " + url + str9);
 						test.log(Status.INFO, "POST Method  ➜ " + url + str9);
+						Subcategory="BaseLine";
 					} catch (Exception e) {
 						log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
 						test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
@@ -1194,7 +1222,74 @@ public class MANRequestmodule extends Environment {
 					Assert.fail();
 			}
 		}
+			if (Subcategory.equals("EntityTypeID")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.GET, str8 + "/"+uniqueide1);
+					log.debug("⏪ GET_SPF ⏩ Request for " + url + str8 + "/"+uniqueide1);
+					test.log(Status.INFO, "GET(ID) Method  ➜ " + url + str8 +"/"+ uniqueide1);
+
+				} catch (Exception e) {
+					log.debug("Failing ! ☹..Exception occur on Spcefic GET Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
+					htmlreport.flush();
+					Assert.fail();
+			}
+		}
     }
+		if (executefile.equals("ENTITIES")) {
+			if (Subcategory.equals("View_Specific_Entities")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.GET, str9 + "/"+uniqueidee1);
+					log.debug("⏪ GET_SPF ⏩ Request for " + url + str9 + "/"+uniqueidee1);
+					test.log(Status.INFO, "GET(ID) Method  ➜ " + url + str9 +"/"+ uniqueidee1);
+					Subcategory="BaseLine";
+
+				} catch (Exception e) {
+					log.debug("Failing ! ☹..Exception occur on Spcefic GET Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
+					htmlreport.flush();
+					Assert.fail();
+			}
+			}  
+			if (Subcategory.equals("View_Specific_Entities_EntitySubType")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.GET, str9 + "/EntitySubType/"+uniqueides1);
+					log.debug("⏪ GET_SPF ⏩ Request for " + url + str9 + "/EntitySubType/"+uniqueides1);
+					test.log(Status.INFO, "GET(ID) Method  ➜ " + url + str9 +"/EntitySubType/"+ uniqueides1);
+					Subcategory="BaseLine";
+
+				} catch (Exception e) {
+					log.debug("Failing ! ☹..Exception occur on Spcefic GET Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
+					htmlreport.flush();
+					Assert.fail();
+			}
+		 }
+			if (Subcategory.equals("View_Specific_Entities_GetEntityList")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.GET, str9 + "/GetEntityList/"+uniqueides1);
+					log.debug("⏪ GET_SPF ⏩ Request for " + url + str9 + "/GetEntityList/"+uniqueides1);
+					test.log(Status.INFO, "GET(ID) Method  ➜ " + url + str9 +"/GetEntityList/"+ uniqueides1);
+					Subcategory="BaseLine";
+
+				} catch (Exception e) {
+					log.debug("Failing ! ☹..Exception occur on Spcefic GET Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
+					htmlreport.flush();
+					Assert.fail();
+			}
+		 }
+		}
+		
+		
 }
 
 	public static void DELETEresponseSPF(String url, String str2, String str3, String str4, String str5, String str6,
@@ -1573,6 +1668,22 @@ public class MANRequestmodule extends Environment {
 				Assert.fail();
 			}
 		}
+		if (executefile.equals("ENTITIES")) {
+			try {
+				httprequest.headers("Content-Type", "application/json");
+				httprequest.header("Authorization", "Bearer " + token);
+				httpresponse = httprequest.request(Method.DELETE, str9 );
+				log.debug("⏪ DELETE ⏩ Request initiated for " + url + str9);
+				test.log(Status.INFO, "DELETE Method  ➜ " + url + str9);
+				
+
+			} catch (Exception e) {
+				log.debug("Failing ! ☹...Exception occur! on DELETE Request " + e);
+				test.log(Status.FAIL, "FAIL, unable to access DELETE (ID) for Specific Deletions");
+				htmlreport.flush();
+				Assert.fail();
+			}
+		}
 	}
 
 	public void PUTresponseSPF(String url, String str2, String str3, String str4, String str5, String str6,
@@ -1809,6 +1920,22 @@ public class MANRequestmodule extends Environment {
 					httpresponse = httprequest.request(Method.PUT, str8+ "/StartVersionChange/" + uniqueides1);
 					log.debug("⏪ PUT ⏩ Request for " + url + str8+ "/StartVersionChange/" + uniqueides1);
 					test.log(Status.INFO, "PUT Method  ➜ " + url + str8+ "/StartVersionChange/" + uniqueides1);
+					
+				} catch (Exception e) {
+					log.debug("Failing ! ☹...Exception occur! on PUT Specific Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access PUT Method for Update the Existing Region Value");
+					Assert.fail();
+				}
+			}
+		}
+		if (executefile.equals("ENTITIES")) {
+			if (Subcategory.equals("Update_Entities")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.PUT, str9+ "/" +uniqueidee1);
+					log.debug("⏪ PUT ⏩ Request for " + url + str9+ "/" +uniqueidee1);
+					test.log(Status.INFO, "PUT Method  ➜ " + url + str9+ "/" +uniqueidee1);
 					
 				} catch (Exception e) {
 					log.debug("Failing ! ☹...Exception occur! on PUT Specific Request " + e);

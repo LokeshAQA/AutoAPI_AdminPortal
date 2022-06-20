@@ -564,8 +564,8 @@ public class AllBodyStructure extends Environment {
 		
 		//Unused One 
 		@JsonProperty("MyArray")
-		ArrayList<String> getmyJurisdictionID = new ArrayList<String>();
-		getmyJurisdictionID.add(uniqueidj1);
+		ArrayList<String> getbyJurisdictionID = new ArrayList<String>();
+		getbyJurisdictionID.add(uniqueidj1);
 		
 		//Used One
 		JSONArray jurisdictionID=new JSONArray();
@@ -660,30 +660,7 @@ public class AllBodyStructure extends Environment {
 	    httprequest.body(requestParams.toJSONString());
 		Subcategory="CreateEntitySubTypeClone";
 	}
-	@SuppressWarnings("unchecked")
-	public void Creation_Entities() throws InterruptedException, IOException {
-
-		requestParams = new JSONObject();
-		SupportProperties.CRUDEntity();
-
-		requestParams.put("EntityTypeId", uniqueide1);
-		log.debug("EntityType ID Given i.e. " + uniqueide1);
-		
-		requestParams.put("EntitySubTypeId", uniqueides1);
-		log.debug("EntitySubype ID Given i.e. " + uniqueides1);
-		
-		String Value = pro.getProperty("Value");
-		requestParams.put("Name", Value);
-		log.debug("Value Given i.e. " + Value);
-		
-		String Suggestion = pro.getProperty("Suggestion");
-		requestParams.put("Name", Suggestion);
-		log.debug("Suggestion Given i.e. " + Suggestion);
-		
-		httprequest.body(requestParams.toJSONString());
-		Subcategory="CreateEntitySubTypeClone";
-	}
-
+	
 	@SuppressWarnings("unchecked")
 	public void CreateNewVersion_EntitySubType() throws InterruptedException, IOException {
 		// TODO Auto-generated method stub
@@ -702,9 +679,94 @@ public class AllBodyStructure extends Environment {
 		requestParams.put("EntitySubTypeName", FinalEntitySubTypeName);
 		log.debug("EntitySubType Name Given i.e. " + FinalEntitySubTypeName);
 		
-		requestParams.put("Version", "");
-		log.debug("Version ID Given i.e. " + "");
+		requestParams.put("Version", "0");
+		log.debug("Version ID Given i.e. " + "0");
 		
 		httprequest.body(requestParams.toJSONString());
+	}
+	
+	@SuppressWarnings("unchecked")
+	public void GetByEntityTypeID() {
+		requestParams = new JSONObject();
+		
+		//Unused One 
+		@JsonProperty("MyArray")
+		ArrayList<String> getbyJurisdictionID = new ArrayList<String>();
+		getbyJurisdictionID.add(uniqueide1);
+		
+		//Used One
+		JSONArray entitytypeID=new JSONArray();
+		entitytypeID.add(uniqueide1);
+		
+		//
+		requestParams.put("EntityTypeID", entitytypeID);
+		log.debug("EntityTypeID Given i.e. " + entitytypeID);
+		httprequest.body(entitytypeID.toJSONString());
+	}
+	@SuppressWarnings("unchecked")
+	public void Creation_Entities() throws InterruptedException, IOException {
+
+		requestParams = new JSONObject();
+		SupportProperties.CRUDEntity();
+
+		requestParams.put("EntityTypeId", uniqueide1);
+		log.debug("EntityType ID Given i.e. " + uniqueide1);
+		
+		requestParams.put("EntitySubTypeId", uniqueides1);
+		log.debug("EntitySubype ID Given i.e. " + uniqueides1);
+		
+		
+		requestParams.put("Value", "0");
+		log.debug("Value Given i.e. " + "0");
+		
+		String Suggestion = pro.getProperty("Suggestion");
+		requestParams.put("Suggestion", Suggestion);
+		log.debug("Suggestion Given i.e. " + Suggestion);
+		
+		httprequest.body(requestParams.toJSONString());
+	}
+	
+	@SuppressWarnings("unchecked")
+	public void Updation_Entities() throws InterruptedException, IOException {
+
+		requestParams = new JSONObject();
+		SupportProperties.CRUDEntity();
+		
+		requestParams.put("Id", uniqueidee1);
+		log.debug("Entities ID Given i.e. " + uniqueidee1);
+		
+		requestParams.put("EntityTypeId", uniqueide1);
+		log.debug("EntityType ID Given i.e. " + uniqueide1);
+		
+		requestParams.put("EntitySubTypeId", uniqueides1);
+		log.debug("EntitySubype ID Given i.e. " + uniqueides1);
+		
+		requestParams.put("Value", "0");
+		log.debug("Value Given i.e. " + "0");
+		
+		String Suggestion = pro.getProperty("Suggestion");
+		requestParams.put("Suggestion", Suggestion);
+		log.debug("Suggestion Given i.e. " + Suggestion);
+		
+		httprequest.body(requestParams.toJSONString());
+	}
+	@SuppressWarnings("unchecked")
+	public void Deletion_Entities() throws InterruptedException, IOException {
+
+requestParams = new JSONObject();
+		
+		//Unused One 
+		@JsonProperty("MyArray")
+		ArrayList<String> entitiesId = new ArrayList<String>();
+		entitiesId.add(uniqueidee1);
+		
+		//Used One
+		JSONArray entitiesID=new JSONArray();
+		entitiesID.add(uniqueidee1);
+		
+		//
+		requestParams.put("EntitiesID", entitiesID);
+		log.debug("Entities ID Given i.e. " + entitiesID);
+		httprequest.body(entitiesID.toJSONString());
 	}
 }

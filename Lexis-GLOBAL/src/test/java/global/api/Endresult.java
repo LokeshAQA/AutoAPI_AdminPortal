@@ -10,6 +10,7 @@ public class Endresult extends GBdeclered{
 	protected static String uniqueidj1;
 	protected static String uniqueide1;
 	protected static String uniqueides1;
+	protected static String uniqueidee1;
 	protected static String UsersID;
 	protected static String EntityKey;
 	protected static String FinalEntityName;

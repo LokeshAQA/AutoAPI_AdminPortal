@@ -62,5 +62,14 @@ public class VerifyJsonID extends Environment {
 	        e.printStackTrace();
 		}
 	}
+	public static void fromEntitiesID() {
+		try {
+			uniqueidee1=ActualBodyResult.replaceAll("^\"|\"$", "");                                                                                                                                                                                                                                                                                                                                                                                            
+			log.debug("➜ Entities ID ➞➞ "+uniqueidee1);
+		} catch (Exception e) {
+			log.debug("❌ Failling ! 🙁...Exception occur! on EntitySubType ID Extraction from Json Body ",e);
+	        e.printStackTrace();
+		}
+	}
 
 }
