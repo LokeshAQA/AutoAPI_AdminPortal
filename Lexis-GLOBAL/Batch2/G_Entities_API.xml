@@ -6,7 +6,7 @@
 			<class name="scenarios.api.Entities_BaseLine"></class>
 			<class name="extend.api.CreateReport"></class>
 		    <class name="testsuite2.test.Entities_POST_with_indistinct" />
-			<class name="testsuite2.test.Entities_DELETE_with_indistinct" />
+		<!-- 	<class name="testsuite2.test.Entities_DELETE_with_indistinct" />
 		    <class name="testsuite2.test.Entities_GET_with_distinct_EntityID" />
            <class name="testsuite2.test.Entities_PUT_with_distinct_EntityID" />
 			
@@ -16,7 +16,7 @@
 			
 			<class name="scenarios.api.CreateReport_GetEntityList"></class>
 			<class name="extend.api.CreateReport"></class>
-			<class name="testsuite2.test.Entities_GET_with_distinct_GetEntitylist" />
+			<class name="testsuite2.test.Entities_GET_with_distinct_GetEntitylist" /> -->
 			
 		</classes>
 	</test> <!-- Test -->

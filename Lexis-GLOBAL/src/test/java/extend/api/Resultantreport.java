@@ -520,5 +520,49 @@ public class Resultantreport extends Environment {
 			test.log(Status.INFO, "------------------------❌👎 Specific Entities is NOT Viewed Include GetEntityList in "+user);
 		}
 	}
+	public static void cReateRuleConfig() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("------------------------✔️👍 Rule Configuration is Created  Successfully in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------✔️👍 Rule Configuration is Created Successfully in "+user);
+		} else {
+			log.debug("------------------------❌👎 Rule Configuration is NOT Created in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------❌👎 Rule Configuration in NOT Created in "+user);
+		}
+	}
+	public static void vIEWRuleConfig() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("------------------------✔️👍 Rule Configuration is Viewed  Successfully in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------✔️👍 Rule Configuration is Viewed Successfully in "+user);
+		} else {
+			log.debug("------------------------❌👎 Rule Configuration is NOT Viewed in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------❌👎 Rule Configuration in NOT Viewed in "+user);
+		}
+	}
+	public static void vIEW_sPecific_RuleConfig() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("------------------------✔️👍 Specific Rule Configuration is Viewed  Successfully in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------✔️👍 Specific Rule Configuration is Viewed Successfully in "+user);
+		} else {
+			log.debug("------------------------❌👎 Specific Rule Configuration is NOT Viewed in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------❌👎 Specific Rule Configuration in NOT Viewed in "+user);
+		}
+	}
+	public static void dElete_sPecific_RuleConfig() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("------------------------✔️👍 Specific Rule Configuration is Deleted  Successfully in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------✔️👍 Specific Rule Configuration is Deleted Successfully in "+user);
+		} else {
+			log.debug("------------------------❌👎 Specific Rule Configuration is NOT Deletd in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------❌👎 Specific Rule Configuration in NOT Deleted in "+user);
+		}
+	}
 
 }

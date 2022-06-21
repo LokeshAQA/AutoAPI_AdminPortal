@@ -15,7 +15,7 @@ public class Rule_Config_GET_with_distinct_ID extends Environment {
 	@Test(dataProvider = "ProbaseURL", dataProviderClass = DP_Base.class)
 	public static void ViewSpecific_RuleConfig(String url) throws IOException, InterruptedException {
 		try {
-			sheetname = "RuleConfig_View(ID)";
+			sheetname = "RuleConfig_View";
 			FileIO.coreutility(sheetname);
 			Operation.worksheet(url);
 		} catch (Exception e) {

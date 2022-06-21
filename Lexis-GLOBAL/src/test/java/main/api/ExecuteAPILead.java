@@ -75,6 +75,18 @@ public class ExecuteAPILead extends Environment {
 					FrameSuite.EntitySubType_GET_View_EntityTypeID(url, str1, str2, str3, str4, str5, str6, str7);
 				}
 			}
+			if (executefile.equals("RULE_CONFIG")) {
+				if (Subcategory.equals("BaseLine")) {
+					log.debug("Execution Started...VIEW ALL "+ executefile +" in "+user);
+					log.debug("Base URL fetched Succeed i.e. " + url);
+					FrameSuite.RuleConfig_GET_View(url, str1, str2, str3, str4, str5, str6, str7);
+				}
+				if (Subcategory.equals("RuleConfig_ID")) {
+					log.debug("Execution Started...VIEW SPECIFIC "+ executefile +" include RuleConfigID in "+user);
+					log.debug("Base URL fetched Succeed i.e. " + url);
+					FrameSuite.RuleConfig_GET_View_RuleConfigID(url, str1, str2, str3, str4, str5, str6, str7);
+				}
+			}
 		} catch (Exception e) {
 			log.debug("Failing(!)...Exception occur! on GET ALL Request in layout_2 " + e);
 			Assert.fail();
@@ -154,6 +166,13 @@ public class ExecuteAPILead extends Environment {
 					log.debug("Execution Started...CREATE A NEW "+ executefile +" in "+user);
 					log.debug("Base URL fetched Succeed i.e. " + url);
 					FrameSuite.Entities_POST_Create(url, str1, str2, str3, str4, str5, str6, str7);	
+				}
+			}
+			if (executefile.equals("RULE_CONFIG")) {
+				if (Subcategory.equals("BaseLine")) {
+					log.debug("Execution Started...CREATE A NEW "+ executefile +" in "+user);
+					log.debug("Base URL fetched Succeed i.e. " + url);
+					FrameSuite.RuleConfig_POST_Create(url, str1, str2, str3, str4, str5, str6, str7);	
 				}
 			}
 		} catch (Exception e) {
@@ -260,6 +279,11 @@ public class ExecuteAPILead extends Environment {
 				log.debug("Execution Started...DELETE THE "+ executefile +" in "+user);
 				log.debug("Base URL fetched Succeed i.e. " + url);
 				FrameSuite.Entities_DELETE_Delete(url, str1, str2, str3, str4, str5, str6, str7);
+			}
+			if (executefile.equals("RULE_CONFIG")) {
+				log.debug("Execution Started...DELETE THE "+ executefile +" include RuleConfigID in "+user);
+				log.debug("Base URL fetched Succeed i.e. " + url);
+				FrameSuite.RuleConfig_DELETE_Delete_RuleConfigID(url, str1, str2, str3, str4, str5, str6, str7);
 			}
 		} catch (Exception e) {
 			log.debug("Failing(!)...Exception occur! on DELETE Request in layout_5 " + e);

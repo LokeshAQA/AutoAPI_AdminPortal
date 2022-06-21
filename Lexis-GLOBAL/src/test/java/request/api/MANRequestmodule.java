@@ -1,5 +1,6 @@
 package request.api;
 
+import org.apache.logging.log4j.core.appender.rolling.action.IfAccumulatedFileCount;
 import org.testng.Assert;
 
 import com.aventstack.extentreports.Status;
@@ -394,6 +395,89 @@ public class MANRequestmodule extends Environment {
 					}
 				}
 		}
+		if (executefile.equals("RULE_CONFIG")) {
+			if (Subcategory.equals("BaseLine")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.POST, str3);
+					log.debug("⏪ POST ⏩ Requested for " + url + str3);
+					test.log(Status.INFO, "POST Method  ➜ " + url + str3);
+				} catch (Exception e) {
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+					Assert.fail();
+				}
+			}
+			 if (Subcategory.equals("Yes_Jurisdiction")) {
+					try {
+						httprequest.headers("Content-Type", "application/json");
+						httprequest.header("Authorization", "Bearer " + token);
+						httpresponse = httprequest.request(Method.POST, str5);
+						log.debug("⏪ POST ⏩ Requested for " + url + str5);
+						test.log(Status.INFO, "POST Method  ➜ " + url + str5);
+						Subcategory = "BaseLine";
+					} catch (Exception e) {
+						log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
+						test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+						Assert.fail();
+					} 
+				}
+				if (Subcategory.equals("CreateEntity")) { 
+					try {
+						httprequest.headers("Content-Type", "application/json");
+						httprequest.header("Authorization", "Bearer " + token);
+						httpresponse = httprequest.request(Method.POST, str7);
+						log.debug("⏪ POST ⏩ Requested for " + url + str7);
+						test.log(Status.INFO, "POST Method  ➜ " + url + str7);
+					} catch (Exception e) {
+						log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
+						test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+						Assert.fail();
+					}
+				}
+				if (Subcategory.equals("CreateEntitySubType")) { 
+					try {
+						httprequest.headers("Content-Type", "application/json");
+						httprequest.header("Authorization", "Bearer " + token);
+						httpresponse = httprequest.request(Method.POST, str8 );
+						log.debug("⏪ POST ⏩ Requested for " + url + str8);
+						test.log(Status.INFO, "POST Method  ➜ " + url + str8);
+					} catch (Exception e) {
+						log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
+						test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+						Assert.fail();
+					}
+				}
+				if (Subcategory.equals("CreateEntities")) {
+					try {
+						httprequest.headers("Content-Type", "application/json");
+						httprequest.header("Authorization", "Bearer " + token);
+						httpresponse = httprequest.request(Method.POST, str9);
+						log.debug("⏪ POST ⏩ Requested for " + url + str9);
+						test.log(Status.INFO, "POST Method  ➜ " + url + str9);
+						Subcategory="BaseLine";
+					} catch (Exception e) {
+						log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
+						test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+						Assert.fail();
+					}
+				}
+			if (Subcategory.equals("Create_RuleConfig")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.POST, str10);
+					log.debug("⏪ POST ⏩ Requested for " + url + str10);
+					test.log(Status.INFO, "POST Method  ➜ " + url + str10);
+					Subcategory="BaseLine";
+			 } catch (Exception e) {
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+					Assert.fail();
+				}
+			}
+		}
 }
 
 
@@ -562,6 +646,21 @@ public class MANRequestmodule extends Environment {
 					httpresponse = httprequest.request(Method.GET, str7);
 					log.debug("⏪ GET_ALL ⏩ Requested for " + url + str7);
 					test.log(Status.INFO, "GET Method  ➜ " + url + str7);
+				} catch (Exception e) {
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+					Assert.fail();
+				}
+			}
+		}
+		if (executefile.equals("RULE_CONFIG")) {
+			if (Subcategory.equals("ViewAll_RuleConfiguration")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.GET, str10);
+					log.debug("⏪ GET_ALL ⏩ Requested for " + url + str10);
+					test.log(Status.INFO, "GET Method  ➜ " + url + str10);
 				} catch (Exception e) {
 					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
@@ -1288,6 +1387,24 @@ public class MANRequestmodule extends Environment {
 			}
 		 }
 		}
+		if (executefile.equals("RULE_CONFIG")) {
+			if (Subcategory.equals("ViewSpecific_RuleConfiguration")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.GET, str10 + "/" +uniqueidrucf1);
+					log.debug("⏪ GET_SPF ⏩ Request for " + url + str10 + "/"+uniqueidrucf1);
+					test.log(Status.INFO, "GET(ID) Method  ➜ " + url + str10 +"/ "+ uniqueidrucf1);
+					Subcategory="BaseLine";
+
+				} catch (Exception e) {
+					log.debug("Failing ! ☹..Exception occur on Spcefic GET Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
+					htmlreport.flush();
+					Assert.fail();
+			}
+		}
+	}
 		
 		
 }
@@ -1682,6 +1799,24 @@ public class MANRequestmodule extends Environment {
 				test.log(Status.FAIL, "FAIL, unable to access DELETE (ID) for Specific Deletions");
 				htmlreport.flush();
 				Assert.fail();
+			}
+		}
+		if (executefile.equals("RULE_CONFIG")) {
+			if (Subcategory.equals("DeleteSpecific_RuleConfiguration")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.DELETE, str10 +"/"+ uniqueidrucf1 );
+					log.debug("⏪ DELETE ⏩ Request initiated for " + url + str10 +"/"+ uniqueidrucf1);
+					test.log(Status.INFO, "DELETE Method  ➜ " + url + str10 +"/"+ uniqueidrucf1);
+					
+
+				} catch (Exception e) {
+					log.debug("Failing ! ☹...Exception occur! on DELETE Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access DELETE (ID) for Specific Deletions");
+					htmlreport.flush();
+					Assert.fail();
+				}
 			}
 		}
 	}

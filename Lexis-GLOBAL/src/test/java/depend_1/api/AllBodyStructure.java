@@ -769,4 +769,19 @@ requestParams = new JSONObject();
 		log.debug("Entities ID Given i.e. " + entitiesID);
 		httprequest.body(entitiesID.toJSONString());
 	}
+	
+	@SuppressWarnings("unchecked")
+	public void creationRuleConfig() throws InterruptedException, IOException {
+
+		requestParams = new JSONObject();
+		SupportProperties.CRUD_Rule();
+		
+		String ruleconfigName = pro.getProperty("Name");
+		requestParams.put("Name", ruleconfigName);
+		log.debug("RuleConfig Name Given i.e. " + ruleconfigName);
+	    requestParams.put("RegionId", uniqueidr1);
+		log.debug("Region ID Given i.e. " + uniqueidr1);
+		
+		httprequest.body(requestParams.toJSONString());
+	}
 }

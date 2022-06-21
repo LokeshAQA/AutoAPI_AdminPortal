@@ -193,13 +193,13 @@ public class FrameSuite extends Environment {
 				Resultantreport.cReateRegion();
 
 				httprequest = RestAssured.given();
-				// TODO Token Generation and Store it	
+				// TODO Token Generation and Store it
 				PrePostRequest.tokengeneration(url, str1);
 				referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
 				VerifyJsonResult.ensurebodyToken();
 				VerifyStatusCode.ensureCode200();
 				VerifyStatusLine.ensureLine200();
-				// VerifyResponseTime.ensure3(url, str2);	
+				// VerifyResponseTime.ensure3(url, str2);
 				Resultantreport.vIewSpecificRegion();
 				htmlreport.flush();
 
@@ -1255,8 +1255,7 @@ public class FrameSuite extends Environment {
 			try {
 				test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
 						.info("SCENARIO ➨ VIEW SPECIFIC " + executefile + " Include " + Subcategory + " in " + user);
-				
-				
+
 				// TODO Stage 1
 				httprequest = RestAssured.given();
 				// TODO Token Generation and Store it
@@ -1293,9 +1292,7 @@ public class FrameSuite extends Environment {
 
 				// TODO End the HTML Report
 				Resultantreport.aSSignUserRegion();
-				
-				
-				
+
 				/*
 				 * // TODO Stage 1-AA httprequest = RestAssured.given(); // TODO Token
 				 * Generation and Store it PrePostRequest.tokengeneration(url, str1); // TODO
@@ -4755,7 +4752,7 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitytypeID();
 		Resultantreport.cReateEntityType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -4771,7 +4768,7 @@ public class FrameSuite extends Environment {
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
-		Subcategory="BaseLine";
+		Subcategory = "BaseLine";
 		referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
 		VerifyJsonResult.ensurebodyToken();
 		VerifyStatusCode.ensureCode200();
@@ -4786,10 +4783,10 @@ public class FrameSuite extends Environment {
 	@SuppressWarnings("static-access")
 	public static void EntitySubType_POST_Create(String url, String str1, String str2, String str3, String str4,
 			String str5, String str6, String str7) throws InterruptedException, IOException {
-		
+
 		test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
 				.info("SCENARIO ➨ CREATE THE NEW " + executefile + " in " + user);
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -4824,7 +4821,7 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitytypeID();
 		Resultantreport.cReateEntityType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -4835,7 +4832,7 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitySubtypeID();
 		Resultantreport.cReateEntitySubType();
-		Subcategory="BaseLine";
+		Subcategory = "BaseLine";
 		htmlreport.flush();
 	}
 
@@ -4845,7 +4842,7 @@ public class FrameSuite extends Environment {
 		if (user.equals("GlobalAdmin")) {
 			test = htmlreport.createTest(executefile + " ➜ PUT Method in " + user)
 					.info("SCENARIO ➨ UPDATE THE SPECIFIC " + executefile + " in " + user);
-			
+
 			httprequest = RestAssured.given();
 			// TODO Token Generation and Store it
 			PrePostRequest.tokengeneration(url, str1);
@@ -4880,7 +4877,7 @@ public class FrameSuite extends Environment {
 			VerifyStatusLine.ensureLine200();
 			VerifyJsonID.fromEntitytypeID();
 			Resultantreport.cReateEntityType();
-			
+
 			httprequest = RestAssured.given();
 			// TODO Token Generation and Store it
 			PrePostRequest.tokengeneration(url, str1);
@@ -4891,12 +4888,12 @@ public class FrameSuite extends Environment {
 			VerifyStatusLine.ensureLine200();
 			VerifyJsonID.fromEntitySubtypeID();
 			Resultantreport.cReateEntitySubType();
-			
+
 			httprequest = RestAssured.given();
 			// TODO Token Generation and Store it
 			PrePostRequest.tokengeneration(url, str1);
 			withrespectto.Updation_EntitySubType();
-			Subcategory="BaseLine";
+			Subcategory = "BaseLine";
 			referencereqresponse.PUTresponseSPF(url, str2, str3, str4, str5, str6, str7);
 			VerifyJsonResult.ensurebodyToken();
 			VerifyStatusCode.ensureCode200();
@@ -4904,7 +4901,7 @@ public class FrameSuite extends Environment {
 			Resultantreport.uPdateEntitySubType();
 			htmlreport.flush();
 		}
-		
+
 	}
 
 	@SuppressWarnings("static-access")
@@ -4946,7 +4943,7 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitytypeID();
 		Resultantreport.cReateEntityType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -4957,7 +4954,7 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitySubtypeID();
 		Resultantreport.cReateEntitySubType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -4968,7 +4965,7 @@ public class FrameSuite extends Environment {
 		Resultantreport.DeleteEntitySubType();
 		htmlreport.flush();
 	}
-	
+
 	@SuppressWarnings("static-access")
 	public static void Entities_DELETE_Delete(String url, String str1, String str2, String str3, String str4,
 			String str5, String str6, String str7) throws InterruptedException, IOException {
@@ -5008,7 +5005,7 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitytypeID();
 		Resultantreport.cReateEntityType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -5019,19 +5016,19 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitySubtypeID();
 		Resultantreport.cReateEntitySubType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
 		withrespectto.Creation_Entities();
-		Subcategory="CreateEntities";
+		Subcategory = "CreateEntities";
 		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
 		VerifyJsonResult.ensurebodyToken();
 		VerifyStatusCode.ensureCode200();
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitiesID();
 		Resultantreport.CreateEntities();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -5043,10 +5040,10 @@ public class FrameSuite extends Environment {
 		Resultantreport.DeleteEntities();
 		htmlreport.flush();
 	}
-	
+
 	@SuppressWarnings("static-access")
-	public static void Entities_GET_Specific_View_Entities(String url, String str1, String str2, String str3, String str4,
-			String str5, String str6, String str7) throws InterruptedException, IOException {
+	public static void Entities_GET_Specific_View_Entities(String url, String str1, String str2, String str3,
+			String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
 		test = htmlreport.createTest(executefile + " ➜ GET Method in " + user)
 				.info("SCENARIO ➨ VIEW THE SPECIFIC " + executefile + " in " + user);
 		httprequest = RestAssured.given();
@@ -5083,7 +5080,7 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitytypeID();
 		Resultantreport.cReateEntityType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -5094,23 +5091,23 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitySubtypeID();
 		Resultantreport.cReateEntitySubType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
 		withrespectto.Creation_Entities();
-		Subcategory="CreateEntities";
+		Subcategory = "CreateEntities";
 		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
 		VerifyJsonResult.ensurebodyToken();
 		VerifyStatusCode.ensureCode200();
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitiesID();
 		Resultantreport.CreateEntities();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
-		Subcategory="View_Specific_Entities";
+		Subcategory = "View_Specific_Entities";
 		referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
 		VerifyJsonResult.ensurebodyToken();
 		VerifyStatusCode.ensureCode200();
@@ -5120,8 +5117,8 @@ public class FrameSuite extends Environment {
 	}
 
 	@SuppressWarnings("static-access")
-	public static void Entities_PUT_Update_Specific_Entities(String url, String str1, String str2, String str3, String str4,
-			String str5, String str6, String str7) throws InterruptedException, IOException {
+	public static void Entities_PUT_Update_Specific_Entities(String url, String str1, String str2, String str3,
+			String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
 		test = htmlreport.createTest(executefile + " ➜ PUT Method in " + user)
 				.info("SCENARIO ➨ UPDATE THE SPECIFIC " + executefile + " in " + user);
 		httprequest = RestAssured.given();
@@ -5158,7 +5155,7 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitytypeID();
 		Resultantreport.cReateEntityType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -5169,24 +5166,24 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitySubtypeID();
 		Resultantreport.cReateEntitySubType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
 		withrespectto.Creation_Entities();
-		Subcategory="CreateEntities";
+		Subcategory = "CreateEntities";
 		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
 		VerifyJsonResult.ensurebodyToken();
 		VerifyStatusCode.ensureCode200();
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitiesID();
 		Resultantreport.CreateEntities();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
 		withrespectto.Updation_Entities();
-		Subcategory="Update_Entities";
+		Subcategory = "Update_Entities";
 		referencereqresponse.PUTresponseSPF(url, str2, str3, str4, str5, str6, str7);
 		VerifyJsonResult.ensurebodyToken();
 		VerifyStatusCode.ensureCode200();
@@ -5194,10 +5191,10 @@ public class FrameSuite extends Environment {
 		Resultantreport.Update_Specific_Entities();
 		htmlreport.flush();
 	}
-	
+
 	@SuppressWarnings("static-access")
-	public static void Entities_GET_Specific_View_Entities_with_EntitySubType(String url, String str1, String str2, String str3, String str4,
-			String str5, String str6, String str7) throws InterruptedException, IOException {
+	public static void Entities_GET_Specific_View_Entities_with_EntitySubType(String url, String str1, String str2,
+			String str3, String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
 		test = htmlreport.createTest(executefile + " ➜ GET Method in " + user)
 				.info("SCENARIO ➨ VIEW THE SPECIFIC " + executefile + " in " + user);
 		httprequest = RestAssured.given();
@@ -5234,7 +5231,7 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitytypeID();
 		Resultantreport.cReateEntityType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -5245,23 +5242,23 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitySubtypeID();
 		Resultantreport.cReateEntitySubType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
 		withrespectto.Creation_Entities();
-		Subcategory="CreateEntities";
+		Subcategory = "CreateEntities";
 		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
 		VerifyJsonResult.ensurebodyToken();
 		VerifyStatusCode.ensureCode200();
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitiesID();
 		Resultantreport.CreateEntities();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
-		Subcategory="View_Specific_Entities_EntitySubType";
+		Subcategory = "View_Specific_Entities_EntitySubType";
 		referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
 		VerifyJsonResult.ensurebodyToken();
 		VerifyStatusCode.ensureCode200();
@@ -5269,10 +5266,10 @@ public class FrameSuite extends Environment {
 		Resultantreport.View_Specific_Entities_EntitySubType();
 		htmlreport.flush();
 	}
-	
+
 	@SuppressWarnings("static-access")
-	public static void Entities_GET_Specific_View_Entities_with_GetEntityList(String url, String str1, String str2, String str3, String str4,
-			String str5, String str6, String str7) throws InterruptedException, IOException {
+	public static void Entities_GET_Specific_View_Entities_with_GetEntityList(String url, String str1, String str2,
+			String str3, String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
 		test = htmlreport.createTest(executefile + " ➜ GET Method in " + user)
 				.info("SCENARIO ➨ VIEW THE SPECIFIC " + executefile + " in " + user);
 		httprequest = RestAssured.given();
@@ -5309,7 +5306,7 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitytypeID();
 		Resultantreport.cReateEntityType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -5320,23 +5317,23 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitySubtypeID();
 		Resultantreport.cReateEntitySubType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
 		withrespectto.Creation_Entities();
-		Subcategory="CreateEntities";
+		Subcategory = "CreateEntities";
 		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
 		VerifyJsonResult.ensurebodyToken();
 		VerifyStatusCode.ensureCode200();
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitiesID();
 		Resultantreport.CreateEntities();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
-		Subcategory="View_Specific_Entities_GetEntityList";
+		Subcategory = "View_Specific_Entities_GetEntityList";
 		referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
 		VerifyJsonResult.ensurebodyToken();
 		VerifyStatusCode.ensureCode200();
@@ -5344,13 +5341,13 @@ public class FrameSuite extends Environment {
 		Resultantreport.View_Specific_Entities_GetEntityList();
 		htmlreport.flush();
 	}
-	
+
 	@SuppressWarnings("static-access")
 	public static void EntitySubType_POST_Create_Clone(String url, String str1, String str2, String str3, String str4,
 			String str5, String str6, String str7) throws InterruptedException, IOException {
 		test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
 				.info("SCENARIO ➨ CREATE THE NEW " + executefile + " in " + user);
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -5385,7 +5382,7 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitytypeID();
 		Resultantreport.cReateEntityType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -5396,7 +5393,7 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitySubtypeID();
 		Resultantreport.cReateEntitySubType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -5411,8 +5408,8 @@ public class FrameSuite extends Environment {
 	}
 
 	@SuppressWarnings("static-access")
-	public static void EntitySubType_GET_View_Specific_IsVersionChangeEnabled(String url, String str1, String str2, String str3,
-			String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
+	public static void EntitySubType_GET_View_Specific_IsVersionChangeEnabled(String url, String str1, String str2,
+			String str3, String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
 		test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
 				.info("SCENARIO ➨ VIEW THE SPECIFIC " + executefile + " include " + Subcategory + " in " + user);
 		httprequest = RestAssured.given();
@@ -5449,7 +5446,7 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitytypeID();
 		Resultantreport.cReateEntityType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -5460,11 +5457,11 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitySubtypeID();
 		Resultantreport.cReateEntitySubType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
-		Subcategory="IsVersionChangedEnabled";
+		Subcategory = "IsVersionChangedEnabled";
 		referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
 		VerifyJsonResult.ensurebodyToken();
 		VerifyStatusCode.ensureCode200();
@@ -5474,7 +5471,7 @@ public class FrameSuite extends Environment {
 		Resultantreport.vIewEntitySubType_IsVersionChangeEnabled();
 		htmlreport.flush();
 	}
-	
+
 	@SuppressWarnings("static-access")
 	public static void EntitySubType_GET_View_Specific_EntityTypeID(String url, String str1, String str2, String str3,
 			String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
@@ -5514,7 +5511,7 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitytypeID();
 		Resultantreport.cReateEntityType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -5525,11 +5522,11 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitySubtypeID();
 		Resultantreport.cReateEntitySubType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
-		Subcategory="EntityTypeID";
+		Subcategory = "EntityTypeID";
 		referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
 		VerifyJsonResult.ensurebodyToken();
 		VerifyStatusCode.ensureCode200();
@@ -5544,7 +5541,7 @@ public class FrameSuite extends Environment {
 			String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
 		test = htmlreport.createTest(executefile + " ➜ PUT Method in " + user)
 				.info("SCENARIO ➨ UPDATE THE SPECIFIC " + executefile + " in " + user);
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -5579,7 +5576,7 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitytypeID();
 		Resultantreport.cReateEntityType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -5590,25 +5587,26 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitySubtypeID();
 		Resultantreport.cReateEntitySubType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
-		//withrespectto.Updation_EntitySubType();
-		Subcategory="StartVersionChange";
-	    referencereqresponse.PUTresponseSPF(url, str2, str3, str4, str5, str6, str7);
+		// withrespectto.Updation_EntitySubType();
+		Subcategory = "StartVersionChange";
+		referencereqresponse.PUTresponseSPF(url, str2, str3, str4, str5, str6, str7);
 		VerifyJsonResult.ensurebodyToken();
 		VerifyStatusCode.ensureCode200();
 		VerifyStatusLine.ensureLine200();
 		Resultantreport.UpdateEntitySubType_StartVersionChange();
 		htmlreport.flush();
 	}
+
 	@SuppressWarnings("static-access")
 	public static void Entities_POST_Create(String url, String str1, String str2, String str3, String str4, String str5,
 			String str6, String str7) throws InterruptedException, IOException {
 		test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
 				.info("SCENARIO ➨ CREATE THE NEW " + executefile + " in " + user);
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -5627,9 +5625,9 @@ public class FrameSuite extends Environment {
 		withrespectto.creationJurisdiction();
 		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
 		VerifyJsonResult.ensurebodyToken();
-		VerifyJsonID.fromJurisdictionID();
 		VerifyStatusCode.ensureCode200();
 		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromJurisdictionID();
 		// VerifyResponseTime.ensure3(url, str2);
 		Resultantreport.cReateJurisdiction();
 
@@ -5643,7 +5641,7 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitytypeID();
 		Resultantreport.cReateEntityType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -5654,20 +5652,20 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitySubtypeID();
 		Resultantreport.cReateEntitySubType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
 		withrespectto.Creation_Entities();
-		Subcategory="CreateEntities";
+		Subcategory = "CreateEntities";
 		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
 		VerifyJsonResult.ensurebodyToken();
 		VerifyStatusCode.ensureCode200();
 		VerifyStatusLine.ensureLine200();
-		VerifyJsonID.fromEntitySubtypeID();
+		VerifyJsonID.fromEntitiesID();
 		Resultantreport.CreateEntities();
 		htmlreport.flush();
-		
+
 	}
 
 	@SuppressWarnings("static-access")
@@ -5676,7 +5674,7 @@ public class FrameSuite extends Environment {
 		// TODO Auto-generated method stub
 		test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
 				.info("SCENARIO ➨ CREATE THE NEW " + executefile + " in " + user);
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -5711,7 +5709,7 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitytypeID();
 		Resultantreport.cReateEntityType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -5722,12 +5720,12 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitySubtypeID();
 		Resultantreport.cReateEntitySubType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
-		PrePostRequest.tokengeneration(url, str1);	
+		PrePostRequest.tokengeneration(url, str1);
 		withrespectto.CreateNewVersion_EntitySubType();
-		Subcategory="CreateNewVersion";
+		Subcategory = "CreateNewVersion";
 		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
 		VerifyJsonResult.ensurebodyToken();
 		VerifyStatusCode.ensureCode200();
@@ -5735,13 +5733,14 @@ public class FrameSuite extends Environment {
 		Resultantreport.CreateNewVersion_EntitySubType();
 		htmlreport.flush();
 	}
+
 	@SuppressWarnings("static-access")
-	public static void EntitySubType_POST_Create_RollbackVersionChanges(String url, String str1, String str2, String str3,
-			String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
+	public static void EntitySubType_POST_Create_RollbackVersionChanges(String url, String str1, String str2,
+			String str3, String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
 		// TODO Auto-generated method stub
 		test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
 				.info("SCENARIO ➨ CREATE THE NEW " + executefile + " in " + user);
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -5776,7 +5775,7 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitytypeID();
 		Resultantreport.cReateEntityType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -5787,11 +5786,11 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitySubtypeID();
 		Resultantreport.cReateEntitySubType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
-		PrePostRequest.tokengeneration(url, str1);	
-		Subcategory="RollbackVersionChanges";
+		PrePostRequest.tokengeneration(url, str1);
+		Subcategory = "RollbackVersionChanges";
 		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
 		VerifyJsonResult.ensurebodyToken();
 		VerifyStatusCode.ensureCode200();
@@ -5799,13 +5798,14 @@ public class FrameSuite extends Environment {
 		Resultantreport.RollbackVersionChanges_EntitySubType();
 		htmlreport.flush();
 	}
+
 	@SuppressWarnings("static-access")
 	public static void EntitySubType_POST_Create_GetByEntityTypeID(String url, String str1, String str2, String str3,
 			String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
 		// TODO Auto-generated method stub
 		test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
 				.info("SCENARIO ➨ CREATE THE NEW " + executefile + " in " + user);
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -5840,7 +5840,7 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitytypeID();
 		Resultantreport.cReateEntityType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
@@ -5851,12 +5851,12 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		VerifyJsonID.fromEntitySubtypeID();
 		Resultantreport.cReateEntitySubType();
-		
+
 		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
-		PrePostRequest.tokengeneration(url, str1);	
+		PrePostRequest.tokengeneration(url, str1);
 		withrespectto.GetByEntityTypeID();
-		Subcategory="GetByEntityTypeID";
+		Subcategory = "GetByEntityTypeID";
 		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
 		VerifyJsonResult.ensurebodyToken();
 		VerifyStatusCode.ensureCode200();
@@ -5864,4 +5864,347 @@ public class FrameSuite extends Environment {
 		Resultantreport.GetByEntityTypeID_EntitySubType();
 		htmlreport.flush();
 	}
+
+	@SuppressWarnings("static-access")
+	public static void RuleConfig_POST_Create(String url, String str1, String str2, String str3, String str4,
+			String str5, String str6, String str7) throws InterruptedException, IOException {
+		// TODO Auto-generated method stub
+		test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
+				.info("SCENARIO ➨ CREATE THE NEW " + executefile + " in " + user);
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.createregioninglobal();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromRegionID();
+		// VerifyResponseTime.ensure2(url, str2, str3, str4);
+		Resultantreport.cReateRegion();
+
+		
+		  httprequest = RestAssured.given(); 
+		  // TODO Token Generation and Store it
+		  PrePostRequest.tokengeneration(url, str1);
+		  withrespectto.creationJurisdiction(); 
+		  referencereqresponse.POSTresponse(url,str2, str3, str4, str5, str6, str7); 
+		  VerifyJsonResult.ensurebodyToken();
+		  VerifyStatusCode.ensureCode200(); 
+		  VerifyStatusLine.ensureLine200();
+		  VerifyJsonID.fromJurisdictionID(); 
+		  // VerifyResponseTime.ensure3(url, str2);
+		  Resultantreport.cReateJurisdiction();
+		  
+		  
+		  httprequest = RestAssured.given(); 
+		  // TODO Token Generation and Store it
+		  PrePostRequest.tokengeneration(url, str1);
+		  withrespectto.Creation_EntityType(); 
+		  referencereqresponse.POSTresponse(url,str2, str3, str4, str5, str6, str7); 
+		  VerifyJsonResult.ensurebodyToken();
+		  VerifyStatusCode.ensureCode200(); 
+		  VerifyStatusLine.ensureLine200();
+		  VerifyJsonID.fromEntitytypeID(); 
+		  Resultantreport.cReateEntityType();
+		  
+		  httprequest = RestAssured.given(); 
+		  // TODO Token Generation and Store it
+		  PrePostRequest.tokengeneration(url, str1);
+		  withrespectto.Creation_EntitySubType();
+		  referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		  VerifyJsonResult.ensurebodyToken(); 
+		  VerifyStatusCode.ensureCode200();
+		  VerifyStatusLine.ensureLine200(); 
+		  VerifyJsonID.fromEntitySubtypeID();
+		  Resultantreport.cReateEntitySubType();
+		  
+		  httprequest = RestAssured.given(); 
+		  // TODO Token Generation and Store it
+		  PrePostRequest.tokengeneration(url, str1); 
+		  withrespectto.Creation_Entities();
+		  Subcategory = "CreateEntities"; 
+		  referencereqresponse.POSTresponse(url, str2,str3, str4, str5, str6, str7); 
+		  VerifyJsonResult.ensurebodyToken();
+		  VerifyStatusCode.ensureCode200(); 
+		  VerifyStatusLine.ensureLine200();
+		  VerifyJsonID.fromEntitiesID(); 
+		  Resultantreport.CreateEntities();
+		 
+		  httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.creationRuleConfig();
+		Subcategory = "Create_RuleConfig";
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		// VerifyResponseTime.ensure3(url, str2);
+		Resultantreport.cReateRuleConfig();
+		htmlreport.flush();
+
+	}
+
+	@SuppressWarnings("static-access")
+	public static void RuleConfig_GET_View(String url, String str1, String str2, String str3, String str4, String str5,
+			String str6, String str7) throws InterruptedException, IOException {
+		// TODO Auto-generated method stub
+		
+		test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
+				.info("SCENARIO ➨ CREATE THE NEW " + executefile + " in " + user);
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.createregioninglobal();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromRegionID();
+		// VerifyResponseTime.ensure2(url, str2, str3, str4);
+		Resultantreport.cReateRegion();
+
+		 httprequest = RestAssured.given(); 
+		  // TODO Token Generation and Store it
+		  PrePostRequest.tokengeneration(url, str1);
+		  withrespectto.creationJurisdiction(); 
+		  referencereqresponse.POSTresponse(url,str2, str3, str4, str5, str6, str7); 
+		  VerifyJsonResult.ensurebodyToken();
+		  VerifyStatusCode.ensureCode200(); 
+		  VerifyStatusLine.ensureLine200();
+		  VerifyJsonID.fromJurisdictionID(); 
+		  // VerifyResponseTime.ensure3(url, str2);
+		  Resultantreport.cReateJurisdiction();
+		  
+		  httprequest = RestAssured.given(); 
+		  // TODO Token Generation and Store it
+		  PrePostRequest.tokengeneration(url, str1);
+		  withrespectto.Creation_EntityType(); 
+		  referencereqresponse.POSTresponse(url,str2, str3, str4, str5, str6, str7); 
+		  VerifyJsonResult.ensurebodyToken();
+		  VerifyStatusCode.ensureCode200(); 
+		  VerifyStatusLine.ensureLine200();
+		  VerifyJsonID.fromEntitytypeID(); 
+		  Resultantreport.cReateEntityType();
+		  
+		  httprequest = RestAssured.given(); 
+		  // TODO Token Generation and Store it
+		  PrePostRequest.tokengeneration(url, str1);
+		  withrespectto.Creation_EntitySubType();
+		  referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		  VerifyJsonResult.ensurebodyToken(); 
+		  VerifyStatusCode.ensureCode200();
+		  VerifyStatusLine.ensureLine200(); 
+		  VerifyJsonID.fromEntitySubtypeID();
+		  Resultantreport.cReateEntitySubType();
+		  
+		  httprequest = RestAssured.given(); 
+		  // TODO Token Generation and Store it
+		  PrePostRequest.tokengeneration(url, str1); 
+		  withrespectto.Creation_Entities();
+		  Subcategory = "CreateEntities"; 
+		  referencereqresponse.POSTresponse(url, str2,str3, str4, str5, str6, str7); 
+		  VerifyJsonResult.ensurebodyToken();
+		  VerifyStatusCode.ensureCode200(); 
+		  VerifyStatusLine.ensureLine200();
+		  VerifyJsonID.fromEntitiesID(); 
+		  Resultantreport.CreateEntities();
+		  
+		  httprequest = RestAssured.given();
+		  // TODO Token Generation and Store it
+		  PrePostRequest.tokengeneration(url, str1);
+		  Subcategory="ViewAll_RuleConfiguration";
+		  referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
+		  VerifyJsonResult.ensurebodyToken();
+		  VerifyStatusCode.ensureCode200();
+		  VerifyStatusLine.ensureLine200();
+		  // VerifyResponseTime.ensure2(url, str2, str3, str4);
+		  Resultantreport.vIEWRuleConfig();
+		  htmlreport.flush();
+	}
+
+	@SuppressWarnings("static-access")
+	public static void RuleConfig_GET_View_RuleConfigID(String url, String str1, String str2, String str3, String str4,
+			String str5, String str6, String str7) throws InterruptedException, IOException {
+		// TODO Auto-generated method stub
+		test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
+				.info("SCENARIO ➨ CREATE THE NEW " + executefile + " in " + user);
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.createregioninglobal();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromRegionID();
+		// VerifyResponseTime.ensure2(url, str2, str3, str4);
+		Resultantreport.cReateRegion();
+
+		 httprequest = RestAssured.given(); 
+		  // TODO Token Generation and Store it
+		  PrePostRequest.tokengeneration(url, str1);
+		  withrespectto.creationJurisdiction(); 
+		  referencereqresponse.POSTresponse(url,str2, str3, str4, str5, str6, str7); 
+		  VerifyJsonResult.ensurebodyToken();
+		  VerifyStatusCode.ensureCode200(); 
+		  VerifyStatusLine.ensureLine200();
+		  VerifyJsonID.fromJurisdictionID(); 
+		  // VerifyResponseTime.ensure3(url, str2);
+		  Resultantreport.cReateJurisdiction();
+		  
+		  httprequest = RestAssured.given(); 
+		  // TODO Token Generation and Store it
+		  PrePostRequest.tokengeneration(url, str1);
+		  withrespectto.Creation_EntityType(); 
+		  referencereqresponse.POSTresponse(url,str2, str3, str4, str5, str6, str7); 
+		  VerifyJsonResult.ensurebodyToken();
+		  VerifyStatusCode.ensureCode200(); 
+		  VerifyStatusLine.ensureLine200();
+		  VerifyJsonID.fromEntitytypeID(); 
+		  Resultantreport.cReateEntityType();
+		  
+		  httprequest = RestAssured.given(); 
+		  // TODO Token Generation and Store it
+		  PrePostRequest.tokengeneration(url, str1);
+		  withrespectto.Creation_EntitySubType();
+		  referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		  VerifyJsonResult.ensurebodyToken(); 
+		  VerifyStatusCode.ensureCode200();
+		  VerifyStatusLine.ensureLine200(); 
+		  VerifyJsonID.fromEntitySubtypeID();
+		  Resultantreport.cReateEntitySubType();
+		  
+		  httprequest = RestAssured.given(); 
+		  // TODO Token Generation and Store it
+		  PrePostRequest.tokengeneration(url, str1); 
+		  withrespectto.Creation_Entities();
+		  Subcategory = "CreateEntities"; 
+		  referencereqresponse.POSTresponse(url, str2,str3, str4, str5, str6, str7); 
+		  VerifyJsonResult.ensurebodyToken();
+		  VerifyStatusCode.ensureCode200(); 
+		  VerifyStatusLine.ensureLine200();
+		  VerifyJsonID.fromEntitiesID(); 
+		  Resultantreport.CreateEntities();
+		  
+		  httprequest = RestAssured.given();
+			// TODO Token Generation and Store it
+			PrePostRequest.tokengeneration(url, str1);
+			withrespectto.creationRuleConfig();
+			Subcategory = "Create_RuleConfig";
+			referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+			VerifyJsonResult.ensurebodyToken();
+			VerifyStatusCode.ensureCode200();
+			VerifyStatusLine.ensureLine200();
+			// VerifyResponseTime.ensure3(url, str2);
+			VerifyJsonID.fromRuleConfigID(); 
+			Resultantreport.cReateRuleConfig();
+		  
+		  httprequest = RestAssured.given();
+		  // TODO Token Generation and Store it
+		  PrePostRequest.tokengeneration(url, str1);
+		  Subcategory="ViewSpecific_RuleConfiguration";
+		  referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
+		  VerifyJsonResult.ensurebodyToken();
+		  VerifyStatusCode.ensureCode200();
+		  VerifyStatusLine.ensureLine200();
+		  Resultantreport.vIEW_sPecific_RuleConfig();
+		  htmlreport.flush();
+	}
+
+	@SuppressWarnings("static-access")
+	public static void RuleConfig_DELETE_Delete_RuleConfigID(String url, String str1, String str2, String str3,
+			String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
+		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub
+				test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
+						.info("SCENARIO ➨ CREATE THE NEW " + executefile + " in " + user);
+
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.createregioninglobal();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebodyToken();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyJsonID.fromRegionID();
+				// VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Resultantreport.cReateRegion();
+
+				 httprequest = RestAssured.given(); 
+				  // TODO Token Generation and Store it
+				  PrePostRequest.tokengeneration(url, str1);
+				  withrespectto.creationJurisdiction(); 
+				  referencereqresponse.POSTresponse(url,str2, str3, str4, str5, str6, str7); 
+				  VerifyJsonResult.ensurebodyToken();
+				  VerifyStatusCode.ensureCode200(); 
+				  VerifyStatusLine.ensureLine200();
+				  VerifyJsonID.fromJurisdictionID(); 
+				  // VerifyResponseTime.ensure3(url, str2);
+				  Resultantreport.cReateJurisdiction();
+				  
+				  httprequest = RestAssured.given(); 
+				  // TODO Token Generation and Store it
+				  PrePostRequest.tokengeneration(url, str1);
+				  withrespectto.Creation_EntityType(); 
+				  referencereqresponse.POSTresponse(url,str2, str3, str4, str5, str6, str7); 
+				  VerifyJsonResult.ensurebodyToken();
+				  VerifyStatusCode.ensureCode200(); 
+				  VerifyStatusLine.ensureLine200();
+				  VerifyJsonID.fromEntitytypeID(); 
+				  Resultantreport.cReateEntityType();
+				  
+				  httprequest = RestAssured.given(); 
+				  // TODO Token Generation and Store it
+				  PrePostRequest.tokengeneration(url, str1);
+				  withrespectto.Creation_EntitySubType();
+				  referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				  VerifyJsonResult.ensurebodyToken(); 
+				  VerifyStatusCode.ensureCode200();
+				  VerifyStatusLine.ensureLine200(); 
+				  VerifyJsonID.fromEntitySubtypeID();
+				  Resultantreport.cReateEntitySubType();
+				  
+				  httprequest = RestAssured.given(); 
+				  // TODO Token Generation and Store it
+				  PrePostRequest.tokengeneration(url, str1); 
+				  withrespectto.Creation_Entities();
+				  Subcategory = "CreateEntities"; 
+				  referencereqresponse.POSTresponse(url, str2,str3, str4, str5, str6, str7); 
+				  VerifyJsonResult.ensurebodyToken();
+				  VerifyStatusCode.ensureCode200(); 
+				  VerifyStatusLine.ensureLine200();
+				  VerifyJsonID.fromEntitiesID(); 
+				  Resultantreport.CreateEntities();
+				  
+				  httprequest = RestAssured.given();
+					// TODO Token Generation and Store it
+					PrePostRequest.tokengeneration(url, str1);
+					withrespectto.creationRuleConfig();
+					Subcategory = "Create_RuleConfig";
+					referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+					VerifyJsonResult.ensurebodyToken();
+					VerifyStatusCode.ensureCode200();
+					VerifyStatusLine.ensureLine200();
+					// VerifyResponseTime.ensure3(url, str2);
+					VerifyJsonID.fromRuleConfigID(); 
+					Resultantreport.cReateRuleConfig();
+				  
+				  httprequest = RestAssured.given();
+				  // TODO Token Generation and Store it
+				  PrePostRequest.tokengeneration(url, str1);
+				  Subcategory="DeleteSpecific_RuleConfiguration";
+				  referencereqresponse.DELETEresponseSPF(url, str2, str3, str4, str5, str6, str7);
+				  VerifyJsonResult.ensurebodyToken();
+				  VerifyStatusCode.ensureCode200();
+				  VerifyStatusLine.ensureLine200();
+				  Resultantreport.dElete_sPecific_RuleConfig();
+				  htmlreport.flush();
+	}
 }
+

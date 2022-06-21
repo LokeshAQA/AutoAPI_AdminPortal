@@ -61,7 +61,18 @@ public class SupportProperties extends Environment {
 			log.debug("Failing(!)...Exception occur! on CRUD EntityPro PROPERTIES FILE load AREA " + e);
 			Assert.fail();
 		}
-
+	}
+	public static void CRUD_Rule() throws InterruptedException, IOException {
+		try {
+			Thread.sleep(100);
+			file = new FileInputStream(System.getProperty("user.dir") + "\\profile\\RulePro.properties");
+			pro = new Properties();
+			pro.load(file);
+			// log.debug("TestData file Loaded Succeed from
+		} catch (Exception e) {
+			log.debug("Failing(!)...Exception occur! on CRUD RulePro PROPERTIES FILE load AREA " + e);
+			Assert.fail();
+		}
 	}
 	
 }
