@@ -12,3 +12,4 @@ public class CreateReport_GetEntityList extends Environment {
 	 Subcategory="GetEntityList";
    }
 }
+

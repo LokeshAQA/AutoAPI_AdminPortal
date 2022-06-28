@@ -86,6 +86,11 @@ public class ExecuteAPILead extends Environment {
 					log.debug("Base URL fetched Succeed i.e. " + url);
 					FrameSuite.RuleConfig_GET_View_RuleConfigID(url, str1, str2, str3, str4, str5, str6, str7);
 				}
+				if (Subcategory.equals("RuleConfig_IsVersionChangeEnabled")) {
+					log.debug("Execution Started...VIEW SPECIFIC "+ executefile +" include IsVersionChangeEnabled in "+user);
+					log.debug("Base URL fetched Succeed i.e. " + url);
+					FrameSuite.RuleConfig_GET_View_IsVersionChangeEnabled(url, str1, str2, str3, str4, str5, str6, str7);
+				}
 			}
 		} catch (Exception e) {
 			log.debug("Failing(!)...Exception occur! on GET ALL Request in layout_2 " + e);
@@ -174,6 +179,21 @@ public class ExecuteAPILead extends Environment {
 					log.debug("Base URL fetched Succeed i.e. " + url);
 					FrameSuite.RuleConfig_POST_Create(url, str1, str2, str3, str4, str5, str6, str7);	
 				}
+				if (Subcategory.equals("RuleConfig_Clone")) {
+					log.debug("Execution Started...CREATE A NEW "+ executefile +" include CLONE in "+user);
+					log.debug("Base URL fetched Succeed i.e. " + url);
+					FrameSuite.RuleConfig_POST_Create_Clone(url, str1, str2, str3, str4, str5, str6, str7);	
+				}
+				if (Subcategory.equals("RuleConfig_CreatNewVersion")) {
+					log.debug("Execution Started...CREATE A NEW "+ executefile +" include CreateNewVersion in "+user);
+					log.debug("Base URL fetched Succeed i.e. " + url);
+					FrameSuite.RuleConfig_POST_Create_CreateNewVersion(url, str1, str2, str3, str4, str5, str6, str7);	
+				}
+				if (Subcategory.equals("RuleConfig_RollBackVersion")) {
+					log.debug("Execution Started...CREATE A NEW "+ executefile +" include CreateNewVersion in "+user);
+					log.debug("Base URL fetched Succeed i.e. " + url);
+					FrameSuite.RuleConfig_POST_Create_RollBackVersion(url, str1, str2, str3, str4, str5, str6, str7);	
+				}
 			}
 		} catch (Exception e) {
 			log.debug("Failing(!)...Exception occur! on POST Request in layout_3 " + e);
@@ -226,6 +246,18 @@ public class ExecuteAPILead extends Environment {
 					log.debug("Execution Started...UPDATE THE EXISTING "+ executefile +" in "+user);
 					log.debug("Base URL fetched Succeed i.e. " + url);
 					FrameSuite.Entities_PUT_Update_Specific_Entities(url, str1, str2, str3, str4, str5, str6, str7);
+				}
+			}
+			if (executefile.equals("RULE_CONFIG")) {
+				if (Subcategory.equals("RuleConfig_ID")) {
+					log.debug("Execution Started...UPDATE THE EXISTING "+ executefile +" in RuleConfig_ID "+user);
+					log.debug("Base URL fetched Succeed i.e. " + url);
+					FrameSuite.RuleConfig_PUT_Update_Specific_RuleConfig(url, str1, str2, str3, str4, str5, str6, str7);
+				}
+				if (Subcategory.equals("RuleConfig_StartVersionChange")) {
+					log.debug("Execution Started...UPDATE THE EXISTING "+ executefile +" in StartVersionChange "+user);
+					log.debug("Base URL fetched Succeed i.e. " + url);
+					FrameSuite.RuleConfig_PUT_Update_StartVersionChange(url, str1, str2, str3, str4, str5, str6, str7);
 				}
 			}
 		} catch (Exception e) {

@@ -528,7 +528,7 @@ public class Resultantreport extends Environment {
 		} else {
 			log.debug("------------------------❌👎 Rule Configuration is NOT Created in "+user);
 			System.out.println();
-			test.log(Status.INFO, "------------------------❌👎 Rule Configuration in NOT Created in "+user);
+			test.log(Status.INFO, "------------------------❌👎 Rule Configuration is NOT Created in "+user);
 		}
 	}
 	public static void vIEWRuleConfig() {
@@ -539,7 +539,7 @@ public class Resultantreport extends Environment {
 		} else {
 			log.debug("------------------------❌👎 Rule Configuration is NOT Viewed in "+user);
 			System.out.println();
-			test.log(Status.INFO, "------------------------❌👎 Rule Configuration in NOT Viewed in "+user);
+			test.log(Status.INFO, "------------------------❌👎 Rule Configuration is NOT Viewed in "+user);
 		}
 	}
 	public static void vIEW_sPecific_RuleConfig() {
@@ -550,7 +550,7 @@ public class Resultantreport extends Environment {
 		} else {
 			log.debug("------------------------❌👎 Specific Rule Configuration is NOT Viewed in "+user);
 			System.out.println();
-			test.log(Status.INFO, "------------------------❌👎 Specific Rule Configuration in NOT Viewed in "+user);
+			test.log(Status.INFO, "------------------------❌👎 Specific Rule Configuration is NOT Viewed in "+user);
 		}
 	}
 	public static void dElete_sPecific_RuleConfig() {
@@ -561,8 +561,81 @@ public class Resultantreport extends Environment {
 		} else {
 			log.debug("------------------------❌👎 Specific Rule Configuration is NOT Deletd in "+user);
 			System.out.println();
-			test.log(Status.INFO, "------------------------❌👎 Specific Rule Configuration in NOT Deleted in "+user);
+			test.log(Status.INFO, "------------------------❌👎 Specific Rule Configuration is NOT Deleted in "+user);
+		}
+	}
+	public static void uPdate_sPecific_RuleConfig() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("------------------------✔️👍 Specific Rule Configuration is Updated  Successfully in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------✔️👍 Specific Rule Configuration is Updated Successfully in "+user);
+		} else {
+			log.debug("------------------------❌👎 Specific Rule Configuration is NOT Updated in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------❌👎 Specific Rule Configuration is NOT Updated in "+user);
 		}
 	}
 
+	public static void cReateRuleConfigCLONE() {
+		// TODO Auto-generated method stub
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("------------------------✔️👍 CLONE Rule Configuration is Created  Successfully in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------✔️👍 CLONE Rule Configuration is Created Successfully in "+user);
+		} else {
+			log.debug("------------------------❌👎 CLONE Rule Configuration is NOT Created in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------❌👎 CLONE Rule Configuration is NOT Created in "+user);
+		}
+	}
+
+	public static void cReateRuleConfigCreateNewVersion() {
+		// TODO Auto-generated method stub
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("------------------------✔️👍 CreateNewVersion Rule Configuration is Created  Successfully in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------✔️👍 CreateNewVersion Rule Configuration is Created Successfully in "+user);
+		} else {
+			log.debug("------------------------❌👎 CreateNewVersion Rule Configuration is NOT Created in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------❌👎 CreateNewVersion Rule Configuration is NOT Created in "+user);
+		}
+	}
+	public static void vIewRuleConfigIsVersionChangeEnabled() {
+		// TODO Auto-generated method stub
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("------------------------✔️👍 IsVersionChangeEnabled in Rule Configuration is Viewed  Successfully in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------✔️👍 IsVersionChangeEnabled in Rule Configuration is Viewed Successfully in "+user);
+		} else {
+			log.debug("------------------------❌👎 IsVersionChangeEnabled in Rule Configuration is NOT Viewed in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------❌👎 IsVersionChangeEnabled in Rule Configuration is NOT Viewed in "+user);
+		}
+	}
+	public static void uPdateRuleConfigStartVersionChange() {
+		// TODO Auto-generated method stub
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("------------------------✔️👍 StartVersionChange in Rule Configuration is Updated  Successfully in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------✔️👍 StartVersionChange in Rule Configuration is Updated Successfully in "+user);
+		} else {
+			log.debug("------------------------❌👎 StartVersionChange in Rule Configuration is NOT Updated in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------❌👎 StartVersionChange in Rule Configuration is NOT Updated in "+user);
+		}
+	}
+	public static void cReateRuleConfigRollBackVersion() {
+		// TODO Auto-generated method stub
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("------------------------✔️👍 RollBackVersion in Rule Configuration is Created  Successfully in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------✔️👍 RollBackVersion in Rule Configuration is Created Successfully in "+user);
+		} else {
+			log.debug("------------------------❌👎 RollBackVersion in Rule Configuration is NOT Created in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------❌👎 RollBackVersion in Rule Configuration is NOT Created in "+user);
+		}
+	}
+	
 }

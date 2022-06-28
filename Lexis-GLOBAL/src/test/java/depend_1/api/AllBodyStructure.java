@@ -776,11 +776,58 @@ requestParams = new JSONObject();
 		requestParams = new JSONObject();
 		SupportProperties.CRUD_Rule();
 		
-		String ruleconfigName = pro.getProperty("Name");
-		requestParams.put("Name", ruleconfigName);
-		log.debug("RuleConfig Name Given i.e. " + ruleconfigName);
+		String ruleconfigName = pro.getProperty("RuleCnfName");
+		requestParams.put("Name", ruleconfigName + currenttime12);
+		log.debug("RuleConfig Name Given i.e. " + ruleconfigName + currenttime12);
 	    requestParams.put("RegionId", uniqueidr1);
 		log.debug("Region ID Given i.e. " + uniqueidr1);
+		
+		httprequest.body(requestParams.toJSONString());
+	}
+
+	@SuppressWarnings("unchecked")
+	public void UpdationRuleConfig() throws InterruptedException, IOException {
+		// TODO Auto-generated method stub
+		requestParams = new JSONObject();
+		SupportProperties.CRUD_Rule();
+		
+		requestParams.put("Id", uniqueidrucf1);
+		log.debug("RuleConfig ID Given i.e. " + uniqueidrucf1);
+		
+		String rulecnfUpdateName = pro.getProperty("RuleCnfUpdateName");
+		requestParams.put("Name", rulecnfUpdateName + currenttime12);
+		log.debug("RuleConfig Name Given i.e. " + rulecnfUpdateName + currenttime12);
+	    
+		httprequest.body(requestParams.toJSONString());
+	}
+
+	@SuppressWarnings("unchecked")
+	public void creationRuleConfig_CLONE() throws InterruptedException, IOException {
+		// TODO Auto-generated method stub
+		requestParams = new JSONObject();
+		SupportProperties.CRUD_Rule();
+		
+		String rulecnfCloneName = pro.getProperty("RuleCnfCloneName");
+		requestParams.put("Name", rulecnfCloneName + currenttime12);
+		log.debug("RuleConfig Name Given i.e. " + rulecnfCloneName + currenttime12);
+		
+		requestParams.put("RegionId", uniqueidr1);
+		log.debug("Region ID Given i.e. " + uniqueidr1);
+		
+		httprequest.body(requestParams.toJSONString());
+	}
+
+	@SuppressWarnings("unchecked")
+	public void creationRuleConfig_CreateNewVersion() throws InterruptedException, IOException {
+		// TODO Auto-generated method stub
+		requestParams = new JSONObject();
+		SupportProperties.CRUD_Rule();
+		
+		requestParams.put("RuleConfigurationId", uniqueidrucf1);
+		log.debug("RuleConfig ID Given i.e. " + uniqueidrucf1);
+		
+		requestParams.put("VersionChange", 1);
+		log.debug("VersionChange Given i.e. " + 1);
 		
 		httprequest.body(requestParams.toJSONString());
 	}

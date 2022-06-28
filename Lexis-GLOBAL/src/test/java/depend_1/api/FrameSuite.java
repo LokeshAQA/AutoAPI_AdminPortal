@@ -5884,55 +5884,53 @@ public class FrameSuite extends Environment {
 		// VerifyResponseTime.ensure2(url, str2, str3, str4);
 		Resultantreport.cReateRegion();
 
-		
-		  httprequest = RestAssured.given(); 
-		  // TODO Token Generation and Store it
-		  PrePostRequest.tokengeneration(url, str1);
-		  withrespectto.creationJurisdiction(); 
-		  referencereqresponse.POSTresponse(url,str2, str3, str4, str5, str6, str7); 
-		  VerifyJsonResult.ensurebodyToken();
-		  VerifyStatusCode.ensureCode200(); 
-		  VerifyStatusLine.ensureLine200();
-		  VerifyJsonID.fromJurisdictionID(); 
-		  // VerifyResponseTime.ensure3(url, str2);
-		  Resultantreport.cReateJurisdiction();
-		  
-		  
-		  httprequest = RestAssured.given(); 
-		  // TODO Token Generation and Store it
-		  PrePostRequest.tokengeneration(url, str1);
-		  withrespectto.Creation_EntityType(); 
-		  referencereqresponse.POSTresponse(url,str2, str3, str4, str5, str6, str7); 
-		  VerifyJsonResult.ensurebodyToken();
-		  VerifyStatusCode.ensureCode200(); 
-		  VerifyStatusLine.ensureLine200();
-		  VerifyJsonID.fromEntitytypeID(); 
-		  Resultantreport.cReateEntityType();
-		  
-		  httprequest = RestAssured.given(); 
-		  // TODO Token Generation and Store it
-		  PrePostRequest.tokengeneration(url, str1);
-		  withrespectto.Creation_EntitySubType();
-		  referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
-		  VerifyJsonResult.ensurebodyToken(); 
-		  VerifyStatusCode.ensureCode200();
-		  VerifyStatusLine.ensureLine200(); 
-		  VerifyJsonID.fromEntitySubtypeID();
-		  Resultantreport.cReateEntitySubType();
-		  
-		  httprequest = RestAssured.given(); 
-		  // TODO Token Generation and Store it
-		  PrePostRequest.tokengeneration(url, str1); 
-		  withrespectto.Creation_Entities();
-		  Subcategory = "CreateEntities"; 
-		  referencereqresponse.POSTresponse(url, str2,str3, str4, str5, str6, str7); 
-		  VerifyJsonResult.ensurebodyToken();
-		  VerifyStatusCode.ensureCode200(); 
-		  VerifyStatusLine.ensureLine200();
-		  VerifyJsonID.fromEntitiesID(); 
-		  Resultantreport.CreateEntities();
-		 
-		  httprequest = RestAssured.given();
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.creationJurisdiction();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromJurisdictionID();
+		// VerifyResponseTime.ensure3(url, str2);
+		Resultantreport.cReateJurisdiction();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntityType();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitytypeID();
+		Resultantreport.cReateEntityType();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntitySubType();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitySubtypeID();
+		Resultantreport.cReateEntitySubType();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_Entities();
+		Subcategory = "CreateEntities";
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitiesID();
+		Resultantreport.CreateEntities();
+
+		httprequest = RestAssured.given();
 		// TODO Token Generation and Store it
 		PrePostRequest.tokengeneration(url, str1);
 		withrespectto.creationRuleConfig();
@@ -5951,7 +5949,7 @@ public class FrameSuite extends Environment {
 	public static void RuleConfig_GET_View(String url, String str1, String str2, String str3, String str4, String str5,
 			String str6, String str7) throws InterruptedException, IOException {
 		// TODO Auto-generated method stub
-		
+
 		test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
 				.info("SCENARIO ➨ CREATE THE NEW " + executefile + " in " + user);
 
@@ -5967,63 +5965,63 @@ public class FrameSuite extends Environment {
 		// VerifyResponseTime.ensure2(url, str2, str3, str4);
 		Resultantreport.cReateRegion();
 
-		 httprequest = RestAssured.given(); 
-		  // TODO Token Generation and Store it
-		  PrePostRequest.tokengeneration(url, str1);
-		  withrespectto.creationJurisdiction(); 
-		  referencereqresponse.POSTresponse(url,str2, str3, str4, str5, str6, str7); 
-		  VerifyJsonResult.ensurebodyToken();
-		  VerifyStatusCode.ensureCode200(); 
-		  VerifyStatusLine.ensureLine200();
-		  VerifyJsonID.fromJurisdictionID(); 
-		  // VerifyResponseTime.ensure3(url, str2);
-		  Resultantreport.cReateJurisdiction();
-		  
-		  httprequest = RestAssured.given(); 
-		  // TODO Token Generation and Store it
-		  PrePostRequest.tokengeneration(url, str1);
-		  withrespectto.Creation_EntityType(); 
-		  referencereqresponse.POSTresponse(url,str2, str3, str4, str5, str6, str7); 
-		  VerifyJsonResult.ensurebodyToken();
-		  VerifyStatusCode.ensureCode200(); 
-		  VerifyStatusLine.ensureLine200();
-		  VerifyJsonID.fromEntitytypeID(); 
-		  Resultantreport.cReateEntityType();
-		  
-		  httprequest = RestAssured.given(); 
-		  // TODO Token Generation and Store it
-		  PrePostRequest.tokengeneration(url, str1);
-		  withrespectto.Creation_EntitySubType();
-		  referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
-		  VerifyJsonResult.ensurebodyToken(); 
-		  VerifyStatusCode.ensureCode200();
-		  VerifyStatusLine.ensureLine200(); 
-		  VerifyJsonID.fromEntitySubtypeID();
-		  Resultantreport.cReateEntitySubType();
-		  
-		  httprequest = RestAssured.given(); 
-		  // TODO Token Generation and Store it
-		  PrePostRequest.tokengeneration(url, str1); 
-		  withrespectto.Creation_Entities();
-		  Subcategory = "CreateEntities"; 
-		  referencereqresponse.POSTresponse(url, str2,str3, str4, str5, str6, str7); 
-		  VerifyJsonResult.ensurebodyToken();
-		  VerifyStatusCode.ensureCode200(); 
-		  VerifyStatusLine.ensureLine200();
-		  VerifyJsonID.fromEntitiesID(); 
-		  Resultantreport.CreateEntities();
-		  
-		  httprequest = RestAssured.given();
-		  // TODO Token Generation and Store it
-		  PrePostRequest.tokengeneration(url, str1);
-		  Subcategory="ViewAll_RuleConfiguration";
-		  referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
-		  VerifyJsonResult.ensurebodyToken();
-		  VerifyStatusCode.ensureCode200();
-		  VerifyStatusLine.ensureLine200();
-		  // VerifyResponseTime.ensure2(url, str2, str3, str4);
-		  Resultantreport.vIEWRuleConfig();
-		  htmlreport.flush();
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.creationJurisdiction();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromJurisdictionID();
+		// VerifyResponseTime.ensure3(url, str2);
+		Resultantreport.cReateJurisdiction();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntityType();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitytypeID();
+		Resultantreport.cReateEntityType();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntitySubType();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitySubtypeID();
+		Resultantreport.cReateEntitySubType();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_Entities();
+		Subcategory = "CreateEntities";
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitiesID();
+		Resultantreport.CreateEntities();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		Subcategory = "ViewAll_RuleConfiguration";
+		referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		// VerifyResponseTime.ensure2(url, str2, str3, str4);
+		Resultantreport.vIEWRuleConfig();
+		htmlreport.flush();
 	}
 
 	@SuppressWarnings("static-access")
@@ -6045,53 +6043,277 @@ public class FrameSuite extends Environment {
 		// VerifyResponseTime.ensure2(url, str2, str3, str4);
 		Resultantreport.cReateRegion();
 
-		 httprequest = RestAssured.given(); 
-		  // TODO Token Generation and Store it
-		  PrePostRequest.tokengeneration(url, str1);
-		  withrespectto.creationJurisdiction(); 
-		  referencereqresponse.POSTresponse(url,str2, str3, str4, str5, str6, str7); 
-		  VerifyJsonResult.ensurebodyToken();
-		  VerifyStatusCode.ensureCode200(); 
-		  VerifyStatusLine.ensureLine200();
-		  VerifyJsonID.fromJurisdictionID(); 
-		  // VerifyResponseTime.ensure3(url, str2);
-		  Resultantreport.cReateJurisdiction();
-		  
-		  httprequest = RestAssured.given(); 
-		  // TODO Token Generation and Store it
-		  PrePostRequest.tokengeneration(url, str1);
-		  withrespectto.Creation_EntityType(); 
-		  referencereqresponse.POSTresponse(url,str2, str3, str4, str5, str6, str7); 
-		  VerifyJsonResult.ensurebodyToken();
-		  VerifyStatusCode.ensureCode200(); 
-		  VerifyStatusLine.ensureLine200();
-		  VerifyJsonID.fromEntitytypeID(); 
-		  Resultantreport.cReateEntityType();
-		  
-		  httprequest = RestAssured.given(); 
-		  // TODO Token Generation and Store it
-		  PrePostRequest.tokengeneration(url, str1);
-		  withrespectto.Creation_EntitySubType();
-		  referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
-		  VerifyJsonResult.ensurebodyToken(); 
-		  VerifyStatusCode.ensureCode200();
-		  VerifyStatusLine.ensureLine200(); 
-		  VerifyJsonID.fromEntitySubtypeID();
-		  Resultantreport.cReateEntitySubType();
-		  
-		  httprequest = RestAssured.given(); 
-		  // TODO Token Generation and Store it
-		  PrePostRequest.tokengeneration(url, str1); 
-		  withrespectto.Creation_Entities();
-		  Subcategory = "CreateEntities"; 
-		  referencereqresponse.POSTresponse(url, str2,str3, str4, str5, str6, str7); 
-		  VerifyJsonResult.ensurebodyToken();
-		  VerifyStatusCode.ensureCode200(); 
-		  VerifyStatusLine.ensureLine200();
-		  VerifyJsonID.fromEntitiesID(); 
-		  Resultantreport.CreateEntities();
-		  
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.creationJurisdiction();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromJurisdictionID();
+		// VerifyResponseTime.ensure3(url, str2);
+		Resultantreport.cReateJurisdiction();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntityType();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitytypeID();
+		Resultantreport.cReateEntityType();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntitySubType();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitySubtypeID();
+		Resultantreport.cReateEntitySubType();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_Entities();
+		Subcategory = "CreateEntities";
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitiesID();
+		Resultantreport.CreateEntities();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.creationRuleConfig();
+		Subcategory = "Create_RuleConfig";
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		// VerifyResponseTime.ensure3(url, str2);
+		VerifyJsonID.fromRuleConfigID();
+		Resultantreport.cReateRuleConfig();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		Subcategory = "ViewSpecific_RuleConfiguration";
+		referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		Resultantreport.vIEW_sPecific_RuleConfig();
+		htmlreport.flush();
+	}
+
+	@SuppressWarnings("static-access")
+	public static void RuleConfig_DELETE_Delete_RuleConfigID(String url, String str1, String str2, String str3,
+			String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
+		test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
+				.info("SCENARIO ➨ CREATE THE NEW " + executefile + " in " + user);
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.createregioninglobal();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromRegionID();
+		// VerifyResponseTime.ensure2(url, str2, str3, str4);
+		Resultantreport.cReateRegion();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.creationJurisdiction();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromJurisdictionID();
+		// VerifyResponseTime.ensure3(url, str2);
+		Resultantreport.cReateJurisdiction();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntityType();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitytypeID();
+		Resultantreport.cReateEntityType();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntitySubType();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitySubtypeID();
+		Resultantreport.cReateEntitySubType();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_Entities();
+		Subcategory = "CreateEntities";
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitiesID();
+		Resultantreport.CreateEntities();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.creationRuleConfig();
+		Subcategory = "Create_RuleConfig";
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		// VerifyResponseTime.ensure3(url, str2);
+		VerifyJsonID.fromRuleConfigID();
+		Resultantreport.cReateRuleConfig();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		Subcategory = "DeleteSpecific_RuleConfiguration";
+		referencereqresponse.DELETEresponseSPF(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		Resultantreport.dElete_sPecific_RuleConfig();
+		htmlreport.flush();
+	}
+
+	@SuppressWarnings("static-access")
+	public static void RuleConfig_PUT_Update_Specific_RuleConfig(String url, String str1, String str2, String str3,
+			String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
+		test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
+				.info("SCENARIO ➨ CREATE THE NEW " + executefile + " in " + user);
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.createregioninglobal();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromRegionID();
+		// VerifyResponseTime.ensure2(url, str2, str3, str4);
+		Resultantreport.cReateRegion();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.creationJurisdiction();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromJurisdictionID();
+		// VerifyResponseTime.ensure3(url, str2);
+		Resultantreport.cReateJurisdiction();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntityType();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitytypeID();
+		Resultantreport.cReateEntityType();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntitySubType();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitySubtypeID();
+		Resultantreport.cReateEntitySubType();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_Entities();
+		Subcategory = "CreateEntities";
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitiesID();
+		Resultantreport.CreateEntities();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.creationRuleConfig();
+		Subcategory = "Create_RuleConfig";
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		// VerifyResponseTime.ensure3(url, str2);
+		VerifyJsonID.fromRuleConfigID();
+		Resultantreport.cReateRuleConfig();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.UpdationRuleConfig();
+		Subcategory = "UpdateSpecific_RuleConfiguration";
+		referencereqresponse.PUTresponseSPF(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		Resultantreport.uPdate_sPecific_RuleConfig();
+		htmlreport.flush();
+	}
+
+	@SuppressWarnings("static-access")
+	public static void RuleConfig_POST_Create_Clone(String url, String str1, String str2, String str3, String str4,
+			String str5, String str6, String str7) throws InterruptedException, IOException {
+		// TODO Auto-generated method stub
+
+		test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
+				.info("SCENARIO ➨ CREATE THE NEW " + executefile + " in " + user);
+
 		  httprequest = RestAssured.given();
+		  // TODO Token Generation and Store it
+		  PrePostRequest.tokengeneration(url, str1);
+		  withrespectto.createregioninglobal();
+		  referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		  VerifyJsonResult.ensurebodyToken();
+		  VerifyStatusCode.ensureCode200();
+		  VerifyStatusLine.ensureLine200();
+		  VerifyJsonID.fromRegionID();
+		  // VerifyResponseTime.ensure2(url, str2, str3, str4);
+		  Resultantreport.cReateRegion();
+		  
+			httprequest = RestAssured.given();
 			// TODO Token Generation and Store it
 			PrePostRequest.tokengeneration(url, str1);
 			withrespectto.creationRuleConfig();
@@ -6101,110 +6323,213 @@ public class FrameSuite extends Environment {
 			VerifyStatusCode.ensureCode200();
 			VerifyStatusLine.ensureLine200();
 			// VerifyResponseTime.ensure3(url, str2);
-			VerifyJsonID.fromRuleConfigID(); 
+			VerifyJsonID.fromRuleConfigID();
 			Resultantreport.cReateRuleConfig();
-		  
+
 		  httprequest = RestAssured.given();
 		  // TODO Token Generation and Store it
 		  PrePostRequest.tokengeneration(url, str1);
-		  Subcategory="ViewSpecific_RuleConfiguration";
-		  referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
+		  withrespectto.creationRuleConfig_CLONE();
+		  Subcategory = "Create_RuleConfig_Clone";
+		  referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
 		  VerifyJsonResult.ensurebodyToken();
 		  VerifyStatusCode.ensureCode200();
 		  VerifyStatusLine.ensureLine200();
-		  Resultantreport.vIEW_sPecific_RuleConfig();
+		  // VerifyResponseTime.ensure3(url, str2);
+		  VerifyJsonID.fromRuleConfigID();
+		  Resultantreport.cReateRuleConfigCLONE();
 		  htmlreport.flush();
+	  }
+
+	@SuppressWarnings("static-access")
+	public static void RuleConfig_POST_Create_CreateNewVersion(String url, String str1, String str2, String str3,
+			String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
+		// TODO Auto-generated method stub
+		
+		test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
+				.info("SCENARIO ➨ CREATE THE NEW " + executefile + " in " + user);
+
+		  httprequest = RestAssured.given();
+		  // TODO Token Generation and Store it
+		  PrePostRequest.tokengeneration(url, str1);
+		  withrespectto.createregioninglobal();
+		  referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		  VerifyJsonResult.ensurebodyToken();
+		  VerifyStatusCode.ensureCode200();
+		  VerifyStatusLine.ensureLine200();
+		  VerifyJsonID.fromRegionID();
+		  // VerifyResponseTime.ensure2(url, str2, str3, str4);
+		  Resultantreport.cReateRegion();
+		  
+			httprequest = RestAssured.given();
+			// TODO Token Generation and Store it
+			PrePostRequest.tokengeneration(url, str1);
+			withrespectto.creationRuleConfig();
+			Subcategory = "Create_RuleConfig";
+			referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+			VerifyJsonResult.ensurebodyToken();
+			VerifyStatusCode.ensureCode200();
+			VerifyStatusLine.ensureLine200();
+			// VerifyResponseTime.ensure3(url, str2);
+			VerifyJsonID.fromRuleConfigID();
+			Resultantreport.cReateRuleConfig();
+
+		  httprequest = RestAssured.given();
+		  // TODO Token Generation and Store it
+		  PrePostRequest.tokengeneration(url, str1);
+		  withrespectto.creationRuleConfig_CreateNewVersion();
+		  Subcategory = "Create_RuleConfig_CreateNewVersion";
+		  referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		  VerifyJsonResult.ensurebodyToken();
+		  VerifyStatusCode.ensureCode200();
+		  VerifyStatusLine.ensureLine200();
+		  // VerifyResponseTime.ensure3(url, str2);
+		  VerifyJsonID.fromRuleConfigID();
+		  Resultantreport.cReateRuleConfigCreateNewVersion();
+		  htmlreport.flush();
+		  
 	}
 
 	@SuppressWarnings("static-access")
-	public static void RuleConfig_DELETE_Delete_RuleConfigID(String url, String str1, String str2, String str3,
+	public static void RuleConfig_GET_View_IsVersionChangeEnabled(String url, String str1, String str2, String str3,
+			String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
+		// TODO Auto-generated method Stub Lokeshwaran B Sections and their and Various and Matter
+	  
+		test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
+				.info("SCENARIO ➨ CREATE THE NEW " + executefile + " in " + user);
+
+		  httprequest = RestAssured.given();
+		  // TODO Token Generation and Store it
+		  PrePostRequest.tokengeneration(url, str1);
+		  withrespectto.createregioninglobal();
+		  referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		  VerifyJsonResult.ensurebodyToken();
+		  VerifyStatusCode.ensureCode200();
+		  VerifyStatusLine.ensureLine200();
+		  VerifyJsonID.fromRegionID();
+		  // VerifyResponseTime.ensure2(url, str2, str3, str4);
+		  Resultantreport.cReateRegion();
+		  
+			httprequest = RestAssured.given();
+			// TODO Token Generation and Store it
+			PrePostRequest.tokengeneration(url, str1);
+			withrespectto.creationRuleConfig();
+			Subcategory = "Create_RuleConfig";
+			referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+			VerifyJsonResult.ensurebodyToken();
+			VerifyStatusCode.ensureCode200();
+			VerifyStatusLine.ensureLine200();
+			// VerifyResponseTime.ensure3(url, str2);
+			VerifyJsonID.fromRuleConfigID();
+			Resultantreport.cReateRuleConfig();
+			
+			 httprequest = RestAssured.given();
+			  // TODO Token Generation and Store it
+			  PrePostRequest.tokengeneration(url, str1);
+			  //withrespectto.creationRuleConfig_CreateNewVersion();
+			  Subcategory = "View_RuleConfig_IsVersionChangeEnabled";
+			  referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
+			  VerifyJsonResult.ensurebodyToken();
+			  VerifyStatusCode.ensureCode200();
+			  VerifyStatusLine.ensureLine200();
+			  // VerifyResponseTime.ensure3(url, str2);
+			  VerifyJsonID.fromRuleConfigID();
+			  Resultantreport.vIewRuleConfigIsVersionChangeEnabled();
+			  htmlreport.flush();
+	
+	}
+
+	@SuppressWarnings("static-access")
+	public static void RuleConfig_PUT_Update_StartVersionChange(String url, String str1, String str2, String str3,
 			String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
 		// TODO Auto-generated method stub
+		
+		test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
+				.info("SCENARIO ➨ CREATE THE NEW " + executefile + " in " + user);
+
+		  httprequest = RestAssured.given();
+		  // TODO Token Generation and Store it
+		  PrePostRequest.tokengeneration(url, str1);
+		  withrespectto.createregioninglobal();
+		  referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		  VerifyJsonResult.ensurebodyToken();
+		  VerifyStatusCode.ensureCode200();
+		  VerifyStatusLine.ensureLine200();
+		  VerifyJsonID.fromRegionID();
+		  // VerifyResponseTime.ensure2(url, str2, str3, str4);
+		  Resultantreport.cReateRegion();
+		  
+			httprequest = RestAssured.given();
+			// TODO Token Generation and Store it
+			PrePostRequest.tokengeneration(url, str1);
+			withrespectto.creationRuleConfig();
+			Subcategory = "Create_RuleConfig";
+			referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+			VerifyJsonResult.ensurebodyToken();
+			VerifyStatusCode.ensureCode200();
+			VerifyStatusLine.ensureLine200();
+			// VerifyResponseTime.ensure3(url, str2);
+			VerifyJsonID.fromRuleConfigID();
+			Resultantreport.cReateRuleConfig();
+			
+			httprequest = RestAssured.given();
+			// TODO Token Generation and Store it
+			PrePostRequest.tokengeneration(url, str1);
+			//withrespectto.creationRuleConfig_CreateNewVersion();
+			Subcategory = "Update_RuleConfig_StartVersionChange";
+			referencereqresponse.PUTresponseSPF(url, str2, str3, str4, str5, str6, str7);
+			VerifyJsonResult.ensurebodyToken();
+			VerifyStatusCode.ensureCode200();
+			VerifyStatusLine.ensureLine200();
+			// VerifyResponseTime.ensure3(url, str2);
+	        Resultantreport.uPdateRuleConfigStartVersionChange();
+			htmlreport.flush();
+	}
+
+	@SuppressWarnings("static-access")
+	public static void RuleConfig_POST_Create_RollBackVersion(String url, String str1, String str2, String str3,
+			String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
 		// TODO Auto-generated method stub
-				test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
-						.info("SCENARIO ➨ CREATE THE NEW " + executefile + " in " + user);
+		test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
+				.info("SCENARIO ➨ CREATE THE NEW " + executefile + " in " + user);
 
-				httprequest = RestAssured.given();
-				// TODO Token Generation and Store it
-				PrePostRequest.tokengeneration(url, str1);
-				withrespectto.createregioninglobal();
-				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
-				VerifyJsonResult.ensurebodyToken();
-				VerifyStatusCode.ensureCode200();
-				VerifyStatusLine.ensureLine200();
-				VerifyJsonID.fromRegionID();
-				// VerifyResponseTime.ensure2(url, str2, str3, str4);
-				Resultantreport.cReateRegion();
-
-				 httprequest = RestAssured.given(); 
-				  // TODO Token Generation and Store it
-				  PrePostRequest.tokengeneration(url, str1);
-				  withrespectto.creationJurisdiction(); 
-				  referencereqresponse.POSTresponse(url,str2, str3, str4, str5, str6, str7); 
-				  VerifyJsonResult.ensurebodyToken();
-				  VerifyStatusCode.ensureCode200(); 
-				  VerifyStatusLine.ensureLine200();
-				  VerifyJsonID.fromJurisdictionID(); 
-				  // VerifyResponseTime.ensure3(url, str2);
-				  Resultantreport.cReateJurisdiction();
-				  
-				  httprequest = RestAssured.given(); 
-				  // TODO Token Generation and Store it
-				  PrePostRequest.tokengeneration(url, str1);
-				  withrespectto.Creation_EntityType(); 
-				  referencereqresponse.POSTresponse(url,str2, str3, str4, str5, str6, str7); 
-				  VerifyJsonResult.ensurebodyToken();
-				  VerifyStatusCode.ensureCode200(); 
-				  VerifyStatusLine.ensureLine200();
-				  VerifyJsonID.fromEntitytypeID(); 
-				  Resultantreport.cReateEntityType();
-				  
-				  httprequest = RestAssured.given(); 
-				  // TODO Token Generation and Store it
-				  PrePostRequest.tokengeneration(url, str1);
-				  withrespectto.Creation_EntitySubType();
-				  referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
-				  VerifyJsonResult.ensurebodyToken(); 
-				  VerifyStatusCode.ensureCode200();
-				  VerifyStatusLine.ensureLine200(); 
-				  VerifyJsonID.fromEntitySubtypeID();
-				  Resultantreport.cReateEntitySubType();
-				  
-				  httprequest = RestAssured.given(); 
-				  // TODO Token Generation and Store it
-				  PrePostRequest.tokengeneration(url, str1); 
-				  withrespectto.Creation_Entities();
-				  Subcategory = "CreateEntities"; 
-				  referencereqresponse.POSTresponse(url, str2,str3, str4, str5, str6, str7); 
-				  VerifyJsonResult.ensurebodyToken();
-				  VerifyStatusCode.ensureCode200(); 
-				  VerifyStatusLine.ensureLine200();
-				  VerifyJsonID.fromEntitiesID(); 
-				  Resultantreport.CreateEntities();
-				  
-				  httprequest = RestAssured.given();
-					// TODO Token Generation and Store it
-					PrePostRequest.tokengeneration(url, str1);
-					withrespectto.creationRuleConfig();
-					Subcategory = "Create_RuleConfig";
-					referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
-					VerifyJsonResult.ensurebodyToken();
-					VerifyStatusCode.ensureCode200();
-					VerifyStatusLine.ensureLine200();
-					// VerifyResponseTime.ensure3(url, str2);
-					VerifyJsonID.fromRuleConfigID(); 
-					Resultantreport.cReateRuleConfig();
-				  
-				  httprequest = RestAssured.given();
-				  // TODO Token Generation and Store it
-				  PrePostRequest.tokengeneration(url, str1);
-				  Subcategory="DeleteSpecific_RuleConfiguration";
-				  referencereqresponse.DELETEresponseSPF(url, str2, str3, str4, str5, str6, str7);
-				  VerifyJsonResult.ensurebodyToken();
-				  VerifyStatusCode.ensureCode200();
-				  VerifyStatusLine.ensureLine200();
-				  Resultantreport.dElete_sPecific_RuleConfig();
-				  htmlreport.flush();
+		  httprequest = RestAssured.given();
+		  // TODO Token Generation and Store it
+		  PrePostRequest.tokengeneration(url, str1);
+		  withrespectto.createregioninglobal();
+		  referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		  VerifyJsonResult.ensurebodyToken();
+		  VerifyStatusCode.ensureCode200();
+		  VerifyStatusLine.ensureLine200();
+		  VerifyJsonID.fromRegionID();
+		  // VerifyResponseTime.ensure2(url, str2, str3, str4);
+		  Resultantreport.cReateRegion();
+		  
+			httprequest = RestAssured.given();
+			// TODO Token Generation and Store it
+			PrePostRequest.tokengeneration(url, str1);
+			withrespectto.creationRuleConfig();
+			Subcategory = "Create_RuleConfig";
+			referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+			VerifyJsonResult.ensurebodyToken();
+			VerifyStatusCode.ensureCode200();
+			VerifyStatusLine.ensureLine200();
+			// VerifyResponseTime.ensure3(url, str2);
+			VerifyJsonID.fromRuleConfigID();
+			Resultantreport.cReateRuleConfig();
+			
+			httprequest = RestAssured.given();
+			// TODO Token Generation and Store it
+			PrePostRequest.tokengeneration(url, str1);
+			//withrespectto.creationRuleConfig_CreateNewVersion();
+			Subcategory = "Create_RuleConfig_RollBackVersion	";
+			referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+			VerifyJsonResult.ensurebodyToken();
+			VerifyStatusCode.ensureCode200();
+			VerifyStatusLine.ensureLine200();
+			// VerifyResponseTime.ensure3(url, str2);
+	        Resultantreport.cReateRuleConfigRollBackVersion();
+			htmlreport.flush();
 	}
 }
 

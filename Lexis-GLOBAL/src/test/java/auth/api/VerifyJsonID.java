@@ -74,7 +74,7 @@ public class VerifyJsonID extends Environment {
 	public static void fromRuleConfigID() {
 		try {
 			uniqueidrucf1=ActualBodyResult.replaceAll("^\"|\"$", "");                                                                                                                                                                                                                                                                                                                                                                                            
-			log.debug("➜ Entities ID ➞➞ "+uniqueidrucf1);
+			log.debug("➜ RuleConfiguration ID ➞➞ "+uniqueidrucf1);
 		} catch (Exception e) {
 			log.debug("❌ Failling ! 🙁...Exception occur! on EntitySubType ID Extraction from Json Body ",e);
 	        e.printStackTrace();

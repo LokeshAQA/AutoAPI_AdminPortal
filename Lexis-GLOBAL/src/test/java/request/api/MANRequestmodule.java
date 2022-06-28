@@ -1,8 +1,6 @@
 package request.api;
 
-import org.apache.logging.log4j.core.appender.rolling.action.IfAccumulatedFileCount;
 import org.testng.Assert;
-
 import com.aventstack.extentreports.Status;
 //import com.aventstack.extentreports.Status;
 import global.api.Environment;
@@ -477,6 +475,48 @@ public class MANRequestmodule extends Environment {
 					Assert.fail();
 				}
 			}
+			if (Subcategory.equals("Create_RuleConfig_Clone")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.POST, str10+"/Clone/"+uniqueidrucf1);
+					log.debug("⏪ POST ⏩ Requested for " + url + str10+"/Clone/"+uniqueidrucf1);
+					test.log(Status.INFO, "POST Method  ➜ " + url + str10+"/Clone/"+uniqueidrucf1);
+					Subcategory="BaseLine";
+			 } catch (Exception e) {
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+					Assert.fail();
+				}
+			}
+			if (Subcategory.equals("Create_RuleConfig_CreateNewVersion")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.POST, str10+"/CreateNewVersion");
+					log.debug("⏪ POST ⏩ Requested for " + url + str10+"/CreateNewVersion");
+					test.log(Status.INFO, "POST Method  ➜ " + url + str10+"/CreateNewVersion");
+					Subcategory="BaseLine";
+			 } catch (Exception e) {
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+					Assert.fail();
+				}
+			}
+			if (Subcategory.equals("Create_RuleConfig_RollBackVersion")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.POST, str10+"/RollBackVersion/"+uniqueidrucf1);
+					log.debug("⏪ POST ⏩ Requested for " + url + str10+"/RollBackVersion/"+uniqueidrucf1);
+					test.log(Status.INFO, "POST Method  ➜ " + url + str10+"/RollBackVersion/"+uniqueidrucf1);
+					Subcategory="BaseLine";
+			 } catch (Exception e) {
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+					Assert.fail();
+				}
+			}
 		}
 }
 
@@ -662,6 +702,20 @@ public class MANRequestmodule extends Environment {
 					log.debug("⏪ GET_ALL ⏩ Requested for " + url + str10);
 					test.log(Status.INFO, "GET Method  ➜ " + url + str10);
 				} catch (Exception e) {
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+					Assert.fail();
+				}
+			}
+			if (Subcategory.equals("View_RuleConfig_IsVersionChangeEnabled")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.GET, str10+"/IsVersionChangeEnabled/"+uniqueidrucf1);
+					log.debug("⏪ GET_ALL ⏩ Requested for " + url + str10+"/IsVersionChangeEnabled/"+uniqueidrucf1);
+					test.log(Status.INFO, "POST Method  ➜ " + url + str10+"/IsVersionChangeEnabled/"+uniqueidrucf1);
+					Subcategory="BaseLine";
+			 } catch (Exception e) {
 					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
 					Assert.fail();
@@ -1809,7 +1863,7 @@ public class MANRequestmodule extends Environment {
 					httpresponse = httprequest.request(Method.DELETE, str10 +"/"+ uniqueidrucf1 );
 					log.debug("⏪ DELETE ⏩ Request initiated for " + url + str10 +"/"+ uniqueidrucf1);
 					test.log(Status.INFO, "DELETE Method  ➜ " + url + str10 +"/"+ uniqueidrucf1);
-					
+					Subcategory="RuleConfig_ID";
 
 				} catch (Exception e) {
 					log.debug("Failing ! ☹...Exception occur! on DELETE Request " + e);
@@ -2078,7 +2132,36 @@ public class MANRequestmodule extends Environment {
 					Assert.fail();
 				}
 			}
-			
+		}
+		if (executefile.equals("RULE_CONFIG")) {
+			if (Subcategory.equals("UpdateSpecific_RuleConfiguration")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.PUT, str10+ "/" +uniqueidrucf1);
+					log.debug("⏪ PUT ⏩ Request for " + url + str10+ "/" +uniqueidrucf1);
+					test.log(Status.INFO, "PUT Method  ➜ " + url + str10+ "/" +uniqueidrucf1);
+					
+				} catch (Exception e) {
+					log.debug("Failing ! ☹...Exception occur! on PUT Specific Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access PUT Method for Update the Existing Region Value");
+					Assert.fail();
+				}	
+			}
+			if (Subcategory.equals("Update_RuleConfig_StartVersionChange")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.PUT, str10+ "/StartVersionChange/" +uniqueidrucf1);
+					log.debug("⏪ PUT ⏩ Request for " + url + str10+ "/StartVersionChange/" +uniqueidrucf1);
+					test.log(Status.INFO, "PUT Method  ➜ " + url + str10+ "/StartVersionChange/" +uniqueidrucf1);
+					
+				} catch (Exception e) {
+					log.debug("Failing ! ☹...Exception occur! on PUT Specific Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access PUT Method for Update the Existing Region Value");
+					Assert.fail();
+				}	
+			}
 		}
 	}	
 }

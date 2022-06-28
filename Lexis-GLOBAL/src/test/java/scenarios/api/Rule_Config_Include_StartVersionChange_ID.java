@@ -4,11 +4,11 @@ import org.testng.annotations.Test;
 
 import global.api.Environment;
 
-public class Rule_Config_Include_ID extends Environment {
+public class Rule_Config_Include_StartVersionChange_ID extends Environment {
 
  @Test
  public static void filename() {
 	 executefile="RULE_CONFIG";
-	 Subcategory="RuleConfig_ID";
+	 Subcategory="RuleConfig_StartVersionChange";
    }
 }
