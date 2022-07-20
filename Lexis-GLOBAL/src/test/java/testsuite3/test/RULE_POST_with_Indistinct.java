@@ -15,7 +15,7 @@ public class RULE_POST_with_Indistinct extends Environment {
 	@Test(dataProvider = "ProbaseURL", dataProviderClass = DP_Base.class)
 	public static void Create_Rule(String url) throws IOException, InterruptedException {
 		try {
-			sheetname = "RuleConfig_Create";
+			sheetname = "Rule_Create";
 			FileIO.coreutility(sheetname);
 			Operation.worksheet(url);
 		} catch (Exception e) {
@@ -24,3 +24,4 @@ public class RULE_POST_with_Indistinct extends Environment {
 		}
 	}
 }
+

@@ -637,5 +637,17 @@ public class Resultantreport extends Environment {
 			test.log(Status.INFO, "------------------------❌👎 RollBackVersion in Rule Configuration is NOT Created in "+user);
 		}
 	}
+	public static void cReateRule() {
+		// TODO Auto-generated method stub
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("------------------------✔️👍 Rule is Created  Successfully in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------✔️👍 Rule is Created Successfully in "+user);
+		} else {
+			log.debug("------------------------❌👎 Rule is NOT Created in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------❌👎 Rule is NOT Created in "+user);
+		}
+	}
 	
 }

@@ -831,4 +831,98 @@ requestParams = new JSONObject();
 		
 		httprequest.body(requestParams.toJSONString());
 	}
+
+	@SuppressWarnings("unchecked")
+	public void creationRule() throws InterruptedException, IOException {
+		// TODO Auto-generated method stub
+		requestParams = new JSONObject();
+		SupportProperties.CRUD_Rule();
+		
+		
+		
+		//requestParams.put("RuleConfigurationId", uniqueidrucf1);
+		//log.debug("RuleConfigurationId Given i.e. " + uniqueidrucf1);	
+		//requestParams.put("RuleConfigurationVersion", 0);	
+		//log.debug("RuleConfigurationVersion Given i.e. " + 0);
+		
+		//JSONArray combinedArray = new JSONArray();
+		//combinedArray.add(requestParams);		
+		//combinedArray.toString();
+		//System.out.println(combinedArray);
+		//requestParams.put("ruleconfigs", combinedArray);
+		//log.debug("Ruleconfigs Given i.e. " + combinedArray);
+		
+		JSONArray RuleConfigurationId=new JSONArray();
+		RuleConfigurationId.add(uniqueidrucf1);
+		requestParams.put("RuleConfigurationId", RuleConfigurationId);	
+		log.debug("RuleConfiguration ID Given i.e. " + RuleConfigurationId);
+		
+		JSONArray RuleConfigurationVersion=new JSONArray();
+		RuleConfigurationVersion.add(0);
+		requestParams.put("RuleConfigurationVersion", RuleConfigurationVersion);
+	    log.debug("RuleConfigurationVersion Given i.e. " + RuleConfigurationVersion);
+		
+	    JSONArray combineddArray = new JSONArray();
+	    combineddArray.add(requestParams);
+	    log.debug("CombinedArray is i.e. " + combineddArray);
+	    requestParams.put("ruleconfigs", combineddArray);
+	   
+		
+		
+		requestParams.put("Key", "TestKey");
+		log.debug("Key Given i.e. " + "TestKey");
+		
+		requestParams.put("Name", "TestName");
+		log.debug("Name Given i.e. " + "TestName");
+		
+		requestParams.put("Tags", "TestTags");
+		log.debug("Tags Given i.e. " + "TestTags");
+		
+		requestParams.put("ColorCode", "TestColorCode");
+		log.debug("ColorCode Given i.e. " + "TestColorCode");
+		
+		requestParams.put("RegionId", uniqueidr1);
+		log.debug("RegionId Given i.e. " + uniqueidr1);
+	   
+		
+		
+		
+		
+	
+		
+		//JSONObject RuleConfigurationIdd = new JSONObject();
+		//JSONObject RuleConfigurationVersionn = new JSONObject();
+				
+		//requestParams.put("RuleConfigurationId", RuleConfigurationId);
+		//log.debug("RuleConfiguration ID Given i.e. " + RuleConfigurationId);
+				
+		//requestParams.put("RuleConfigurationVersion", RuleConfigurationVersion);
+		//log.debug("RuleConfigurationVersion Given i.e. " + RuleConfigurationId);
+		
+		//JSONArray RuleConfigurationId=new JSONArray();
+		//RuleConfigurationId.add(uniqueidrucf1);
+		//requestParams.put("RuleConfigurationId", RuleConfigurationId);
+		//log.debug("RuleConfiguration ID Given i.e. " + RuleConfigurationId);
+		
+		//JSONArray RuleConfigurationVersion=new JSONArray();
+		//RuleConfigurationVersion.add(0);
+		//requestParams.put("RuleConfigurationVersion", RuleConfigurationVersion);
+		//log.debug("RuleConfigurationVersion Given i.e. " + RuleConfigurationId);
+		
+		//RuleConfigurationId.addAll(RuleConfigurationVersion);
+	    
+		//requestParams.put("ruleconfigs", RuleConfigurationId);
+		//log.debug("ruleconfigs ID Given i.e. " + RuleConfigurationId);\
+	}
+
+	
 }
+
+
+
+
+	
+
+
+
+

@@ -5,10 +5,10 @@
   <classes>  
   <class name="scenarios.api.Rule_Config_BaseLine"></class>
   <class name="extend.api.CreateReport"></class>
-  <class name="testsuite3.test.Rule_Config_POST_with_Indistinct" />
+  <!-- <class name="testsuite3.test.Rule_Config_POST_with_Indistinct" /> -->
   <class name="testsuite3.test.Rule_Config_GET_with_Indistinct" />
   
-   <class name="scenarios.api.Rule_Config_Include_RuleConfigID"></class>
+   <!-- <class name="scenarios.api.Rule_Config_Include_RuleConfigID"></class>
    <class name="extend.api.CreateReport"></class>
    <class name="testsuite3.test.Rule_Config_GET_with_distinct_ID" />
    <class name="testsuite3.test.Rule_Config_DELETE_with_distinct_ID" />
@@ -29,15 +29,16 @@
   
     <class name="scenarios.api.Rule_Config_Include_RollBackVersion_ID"></class>
     <class name="extend.api.CreateReport"></class>
-    <class name="testsuite3.test.Rule_Config_POST_with_RollBackVersion_RuleConfigID" />
+    <class name="testsuite3.test.Rule_Config_POST_with_RollBackVersion_RuleConfigID" /> -->
     
-    <!-- <class name="scenarios.api.Rule_Config_Include_CreateNewVersion"></class>
+   <!--  <class name="scenarios.api.Rule_Config_Include_CreateNewVersion"></class>
    <class name="extend.api.CreateReport"></class>
   <class name="testsuite3.test.Rule_Config_POST_with_CreateNewVersion" /> -->
   
  </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+
 
 
 

@@ -26,7 +26,7 @@ public class MANRequestmodule extends Environment {
 
 	public static void POSTresponse(String url, String str2, String str3, String str4, String str5, String str6,
 			String str7) {
-		if (executefile.equals("REGION")) {
+    	if (executefile.equals("REGION")) {
 			if (Subcategory.equals("BaseLine")) {
 				try {
 					httprequest.headers("Content-Type", "application/json");
@@ -517,9 +517,53 @@ public class MANRequestmodule extends Environment {
 					Assert.fail();
 				}
 			}
-		}
+	  }
+		if (executefile.equals("RULE")) {
+			if (Subcategory.equals("BaseLine")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.POST, str3);
+					log.debug("⏪ POST ⏩ Requested for " + url + str3);
+					test.log(Status.INFO, "POST Method  ➜ " + url + str3);
+					Subcategory="BaseLine";
+				} catch (Exception e) {
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to Initiate POST Method for " + executefile + " Creation");
+					test.log(Status.FAIL, "❌ Fail ! 🙁...Expected ➨ [200] ≠≠ Actual ➨ " + "[ " + statuscode + "]");
+				}
+			}
+			if (Subcategory.equals("Create_RuleConfig")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.POST, str10);
+					log.debug("⏪ POST ⏩ Requested for " + url + str10);
+					test.log(Status.INFO, "POST Method  ➜ " + url + str10);
+					Subcategory="BaseLine";
+			 } catch (Exception e) {
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+					Assert.fail();
+				}
+			}
+			if (Subcategory.equals("Create_Rule")) {
+				System.out.println("Checking STR11");
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.POST, str11);
+					log.debug("⏪ POST ⏩ Requested for " + url + str11);
+					test.log(Status.INFO, "POST Method  ➜ " + url + str11);
+					Subcategory="BaseLine";
+			 } catch (Exception e) {
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+					Assert.fail();
+				}
+			}
+     }
 }
-
 
 	public static void GETresponseALL(String url, String str2, String str3, String str4, String str5, String str6,
 			String str7) {

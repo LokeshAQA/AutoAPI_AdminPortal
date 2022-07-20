@@ -24,3 +24,4 @@ public class Region_GET_View extends Environment {
 		}
 	}
 }
+

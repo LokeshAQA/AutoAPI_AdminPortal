@@ -190,9 +190,16 @@ public class ExecuteAPILead extends Environment {
 					FrameSuite.RuleConfig_POST_Create_CreateNewVersion(url, str1, str2, str3, str4, str5, str6, str7);	
 				}
 				if (Subcategory.equals("RuleConfig_RollBackVersion")) {
-					log.debug("Execution Started...CREATE A NEW "+ executefile +" include CreateNewVersion in "+user);
+					log.debug("Execution Started...CREATE A NEW "+ executefile +" include RollBackVersion in "+user);
 					log.debug("Base URL fetched Succeed i.e. " + url);
 					FrameSuite.RuleConfig_POST_Create_RollBackVersion(url, str1, str2, str3, str4, str5, str6, str7);	
+				}
+			}
+			if (executefile.equals("RULE")) {
+				if (Subcategory.equals("BaseLine")) {
+					log.debug("Execution Started...CREATE A NEW "+ executefile +" in "+user);
+					log.debug("Base URL fetched Succeed i.e. " + url);
+					FrameSuite.Rule_POST_Create(url, str1, str2, str3, str4, str5, str6, str7);	
 				}
 			}
 		} catch (Exception e) {
@@ -413,6 +420,7 @@ public class ExecuteAPILead extends Environment {
 			log.debug("Failing(!)...Exception occur! on GET Specific Request in layout_6 " + e);
 			Assert.fail();
 		}
-
 	}
 }
+
+

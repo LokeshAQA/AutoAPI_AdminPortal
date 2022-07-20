@@ -7,7 +7,7 @@ import global.api.Environment;
 public class DP_Base extends Environment {
 	@DataProvider(name = "ProbaseURL")
 	String[] getBaseurl() {
-		String[] basurl = { "https://lnmjapi.adappt.ai/" };
+		String[] basurl = { "https://lnmjapi.adappt.ai/api/v1/" };
 		return basurl;
 	}
 }
